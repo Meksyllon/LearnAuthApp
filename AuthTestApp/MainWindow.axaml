@@ -1,0 +1,105 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		CanResize="False"
+		WindowStartupLocation="CenterScreen"
+        x:Class="AuthTestApp.MainWindow"
+        Title="AuthTestApp">
+
+	<StackPanel Orientation="Horizontal" x:Name="MainPanel">
+		<Panel>
+			<StackPanel x:Name="LoggedInfo" IsVisible="True" Width="200" Margin="15">
+				<StackPanel Orientation="Horizontal">
+					<TextBlock Text="Username: " FontSize="16" Margin="0 3" FontWeight="Bold"/>
+					<Label Content="dsadsad" x:Name="LoggedName" FontSize="16"/>
+				</StackPanel>
+
+				<StackPanel Orientation="Horizontal">
+					<TextBlock Text="Role: " FontSize="16" Margin="0 3 0 15" FontWeight="Bold"/>
+					<Label Content="dsadsad" x:Name="LoggedRole" FontSize="16"/>
+				</StackPanel>
+
+				<TextBox Watermark="Old password" x:Name="ShangePassOldTB" MaxLength="20" PasswordChar="•" IsVisible="False"/>
+				<TextBox Watermark="New password" x:Name="ShangePassNewTB" MaxLength="20" Margin="0 10" PasswordChar="•"  IsVisible="False"/>
+				<Button x:Name="ShangePassButton"
+						Content="Shange password"
+						Click="ShangePassButton_OnClick"/>
+				<Button x:Name="LogOutButton"
+						Content="Log out"
+						Click="LogOutButton_OnClick"
+						Margin="0 10"/>
+				
+			</StackPanel>
+			
+			<Grid RowDefinitions="*, *" x:Name="SignUpInPanel" Margin="15" Width="200" IsVisible="False">
+				<StackPanel Grid.Row="0">
+					<TextBlock Text="Sign up:" FontSize="18" FontWeight="Bold"/>
+				</StackPanel>
+				<StackPanel Grid.Row="0" >
+					<TextBlock Text="Sign up:" FontSize="18" FontWeight="Bold"/>
+					<TextBox Watermark="Username" x:Name="SignUpUsernameTB" MaxLength="20" Margin="0 10"/>
+					<TextBox Watermark="Password" x:Name="SignUpPasswordTB" MaxLength="20" Margin="0 0 0 10" PasswordChar="•"/>
+					<Button x:Name="SignUpButton"
+							Content="Sign up"
+							Click="SignUpButton_OnClick"/>
+					<Label x:Name="SignUpErrorLabel" FontSize="12"/>
+				</StackPanel>
+
+				<StackPanel Grid.Row="1" >
+					<TextBlock Text="Sign in:" FontSize="18" FontWeight="Bold"/>
+					<TextBox Watermark="Username" x:Name="SignInUsernameTB" MaxLength="20" Margin="0 10"/>
+					<TextBox Watermark="Password" x:Name="SignInPasswordTB" MaxLength="20" Margin="0 0 0 10" PasswordChar="•"/>
+					<Button x:Name="LogInButton"
+							Content="Log in"
+							Click="LogInButton_OnClick"/>
+					<Label x:Name="SignInErrorLabel" FontSize="12"/>
+				</StackPanel>
+			</Grid>
+		</Panel>
+		<StackPanel x:Name="AdminPanel" Orientation="Horizontal" IsVisible="False">
+			<Grid RowDefinitions="*, *" Margin="15" Width="200">
+				<StackPanel Grid.Row="0" >
+					<TextBlock Text="Add user:" FontSize="18" FontWeight="Bold"/>
+					<TextBox Watermark="Username" x:Name="AddNameTB" MaxLength="20" Margin="0 10"/>
+					<TextBox Watermark="Password" x:Name="AddPasswordTB" MaxLength="20" Margin="0 0 0 5" PasswordChar="•"/>
+					<TextBlock Text="User role:"/>
+
+					<Panel>
+						<ComboBox SelectedIndex="0" x:Name="RoleComboBox" Margin="0 0 0 10">
+							<ComboBoxItem>Employee</ComboBoxItem>
+							<ComboBoxItem>Admin</ComboBoxItem>
+						</ComboBox>
+
+						<Button VerticalAlignment="Top" HorizontalAlignment="Right" x:Name="ButtonAdd"
+								Content="Add user"
+								Click="ButtonAdd_OnClick"/>
+					</Panel>
+					<Label x:Name="AddErrorLabel" FontSize="12"/>
+				</StackPanel>
+
+				<StackPanel Grid.Row="1">
+					<TextBlock Text="Delete user:" FontSize="18" FontWeight="Bold"/>
+					<TextBox  Watermark="Username" x:Name="DeleteTextBox" MaxLength="20" Margin="0 10"/>
+					<Button x:Name="ButtonDelete"
+						Content="Delete user"
+						Click="ButtonDelete_OnClick"/>
+					<Label x:Name="DeleteErrorLabel" FontSize="12"/>
+				</StackPanel>
+
+			</Grid>
+
+			<StackPanel Margin="15">
+				<TextBlock Text="Users:" FontSize="18" FontWeight="Bold"/>
+				<Grid ColumnDefinitions="*, *, *">
+					<TextBlock Text="Username:" Grid.Column="0" FontWeight="Bold"/>
+					<TextBlock Text="Password:" Grid.Column="1" Margin="25 0" FontWeight="Bold"/>
+					<TextBlock Text="Role:" Grid.Column="2" FontWeight="Bold"/>
+					<Label x:Name="UsersNameLabel" Grid.Column="0" Margin="-3 15"/>
+					<Label x:Name="UsersPasswordLabel" Grid.Column="1" Margin="22 15"/>
+					<Label x:Name="UsersRoleLabel" Grid.Column="2" Margin="-3 15"/>
+				</Grid>
+			</StackPanel>
+		</StackPanel>
+	</StackPanel>
+</Window>
