@@ -1,4 +1,5 @@
 <ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 	<SolidColorBrush x:Key="prColor" Color="#EA4336"/>
+	<ImageBrush x:Key="bgImage" Source="D:\Programming\C#\AuthTestApp\AuthTestApp\Assets\bg.png" Stretch="UniformToFill"/>
 </ResourceDictionary>

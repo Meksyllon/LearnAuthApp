@@ -12,8 +12,6 @@ namespace AuthTestApp
     {
         public override void Initialize()
         {
-            Directory.SetCurrentDirectory(@"..\..\..");
-            System.Console.WriteLine(Directory.GetCurrentDirectory());
             AvaloniaXamlLoader.Load(this);
         }
 

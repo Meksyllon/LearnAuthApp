@@ -5,10 +5,9 @@
 		CanResize="False"
 		WindowStartupLocation="CenterScreen"
         x:Class="AuthTestApp.EntryWindow"		
-        Title="Sign in">
-
+        Title="Sign in"
+		Background="{DynamicResource bgImage}">
 		<Grid RowDefinitions="*, *" x:Name="SignUpInPanel">
-			<Panel Grid.Row="0" Background="#f1f1f1"/>
 			<StackPanel Grid.Row="0" Spacing="5" Margin="0 15" Width="200">
 				<TextBlock Text="Sign up:" Classes="header"/>
 				<TextBox Watermark="Username" x:Name="SignUpUsernameTB"/>
@@ -19,7 +18,6 @@
 				<Label x:Name="SignUpErrorLabel" FontSize="12"/>
 			</StackPanel>
 
-			<Panel Grid.Row="1" Background="#fafafa"/>
 			<StackPanel Grid.Row="1" Spacing="5" Margin="0 15" Width="200">
 				<TextBlock Text="Sign in:" Classes="header"/>
 				<TextBox Watermark="Username" x:Name="SignInUsernameTB"/>

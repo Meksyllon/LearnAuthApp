@@ -5,8 +5,9 @@
 		CanResize="False"
 		WindowStartupLocation="CenterScreen"
         x:Class="AuthTestApp.MainWindow"
-        Title="Content handler">
-
+        Title="Content handler"
+		Background="{DynamicResource bgImage}">
+	
 	<StackPanel Orientation="Horizontal" x:Name="MainPanel">
 		<Panel>
 			<StackPanel x:Name="LoggedInfo" Width="200" Margin="15">

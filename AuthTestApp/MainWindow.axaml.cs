@@ -75,7 +75,7 @@ namespace AuthTestApp
 
             if (!usersRepository.UsernameUsed(username))
             {
-                DeleteErrorLabel.Content = "User with this name is not exists!";
+                DeleteErrorLabel.Content = "User with this name does not exists!";
                 return;
             }            
             usersRepository.Delete(username);
@@ -90,7 +90,7 @@ namespace AuthTestApp
                 var entryWindow = new EntryWindow(usersRepository);
                 entryWindow.Show();
                 this.Close();
-            }
+            } 
         }
 
         private void ChangePassButton_OnClick(object? sender, RoutedEventArgs e)
