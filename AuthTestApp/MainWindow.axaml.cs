@@ -1,6 +1,9 @@
 using AuthTestApp.DataAccess;
+using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Interactivity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -13,21 +16,36 @@ namespace AuthTestApp
 
     public partial class MainWindow : Window
     {
-        const int START_WIDTH = 230;
-        const int START_HEIGTH = 400;
-        const int FULL_WIDTH = 900;
-        const string DEFAULT_ROLE = "Employee";
-
-        private AuthDBContext _dbContext;
-        private UsersRepository _usersRepository;
+        private readonly UsersRepository usersRepository;
+        private User userAccount;
         public MainWindow()
         {
             InitializeComponent();
-            _dbContext = new AuthDBContext();
-            _usersRepository = new UsersRepository(_dbContext);
-            Width = START_WIDTH;
-            Height = START_HEIGTH;
-            UpdateUsersList();
+            usersRepository = new UsersRepository(new AuthDBContext());
+            userAccount = new User("admin", "admin", UserRoles.Admin);
+            Width = userAccount.Role == UserRoles.Admin ? WindowSizes.FullWidth : WindowSizes.StartWidth;
+            Height = WindowSizes.StartHeight;
+            ShowUserInfo();
+        }
+        public MainWindow(UsersRepository usersRepository, User userAccount)
+        {
+            InitializeComponent();
+            this.usersRepository = usersRepository;
+            this.userAccount = userAccount;
+            Width = userAccount.Role == UserRoles.Admin ? WindowSizes.FullWidth : WindowSizes.StartWidth;
+            Height = WindowSizes.StartHeight;
+            ShowUserInfo();
+        }
+
+        private void ShowUserInfo()
+        {
+            LoggedName.Content = userAccount.Name;
+            LoggedRole.Content = userAccount.Role;
+            if (userAccount.Role == UserRoles.Admin)
+            {
+                AdminPanel.IsVisible = true;
+                UpdateUsersList();
+            }
         }
 
         private void ButtonAdd_OnClick(object? sender, RoutedEventArgs e)
@@ -36,107 +54,81 @@ namespace AuthTestApp
             var username = AddNameTB.Text;
             var password = AddPasswordTB.Text;
             var role = RoleComboBox.SelectionBoxItem?.ToString();
-            if (username == null || username == string.Empty || password == null || password == string.Empty) return;
-
-            if (_usersRepository.UsernameUsed(username))
+            if (role == null) throw new ArgumentException("Role of new user can't be readed");
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password)) return;
+            if (usersRepository.UsernameUsed(username))
+            { 
                 AddErrorLabel.Content = "User with this name already exists!";
-            else
-            {
-                if (role == null) throw new ArgumentException();
-                _usersRepository.Add(username, password, role);
-                UpdateUsersList();
-                AddNameTB.Clear();
-                AddPasswordTB.Clear();
+                return;
             }
+            usersRepository.Add(username, password, role);
+            UpdateUsersList();
+            AddNameTB.Clear();
+            AddPasswordTB.Clear();
         }
 
         private void ButtonDelete_OnClick(object? sender, RoutedEventArgs e)
         {
             DeleteErrorLabel.Content = null;
             var username = DeleteTextBox.Text;
-            if (username == null || username == string.Empty) return;
+            if (string.IsNullOrEmpty(username)) return;
 
-            if (!_usersRepository.UsernameUsed(username))
+            if (!usersRepository.UsernameUsed(username))
+            {
                 DeleteErrorLabel.Content = "User with this name is not exists!";
-            else
-            {
-                _usersRepository.Delete(username);
-                UpdateUsersList();
-                DeleteTextBox.Clear();
+                return;
             }            
-        }
-        private void SignUpButton_OnClick(object? sender, RoutedEventArgs e)
-        {
-            SignUpErrorLabel.Content = null;
-
-            var username = SignUpUsernameTB.Text;
-            var password = SignUpPasswordTB.Text;
-            if (username == null || username == string.Empty || password == null || password == string.Empty) return;
-
-            if (_usersRepository.UsernameUsed(username))
-                SignUpErrorLabel.Content = "This username already taken!";
-            else
-            {
-                _usersRepository.Add(username, password, DEFAULT_ROLE);
-                UpdateUsersList();
-                AddNameTB.Clear();
-                AddPasswordTB.Clear();
-                var user = _usersRepository.Get().FirstOrDefault(user => user.Name == username && user.Password == password);
-                LogIn(user);
-                SignUpUsernameTB.Clear();
-                SignUpPasswordTB.Clear();
-            }
-        }
-
-        private void LogInButton_OnClick(object? sender, RoutedEventArgs e)
-        {
-            SignInErrorLabel.Content = null;
-
-            var username = SignInUsernameTB.Text;
-            var password = SignInPasswordTB.Text;
-            if (username == null || username == string.Empty || password == null || password == string.Empty) return;
-            var user = _usersRepository.Get().FirstOrDefault(user => user.Name == username && user.Password == password);
-            if (user == null)
-                SignInErrorLabel.Content = "Incorrect username or password!";
-            else
-            {
-                LogIn(user);
-                SignInUsernameTB.Clear();
-                SignInPasswordTB.Clear();
-            }
-        }
-
-        private void LogIn(User user)
-        {
-            if (user.Role == "Admin")
-            {
-                Width = FULL_WIDTH;
-                AdminPanel.IsVisible = true;
-            }
-            LoggedName.Content = user.Name;
-            LoggedRole.Content = user.Role;
-            SignUpInPanel.IsVisible = false;
-            LoggedInfo.IsVisible = true;
+            usersRepository.Delete(username);
+            UpdateUsersList();
+            DeleteTextBox.Clear();                        
         }
 
         private void LogOutButton_OnClick(object? sender, RoutedEventArgs e)
         {
-            if (LoggedRole?.Content?.ToString() == "Admin")
+            if (Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
-                Width = START_WIDTH;
-                AdminPanel.IsVisible = false;
+                var entryWindow = new EntryWindow(usersRepository);
+                entryWindow.Show();
+                this.Close();
             }
-            SignUpInPanel.IsVisible = true;
-            LoggedInfo.IsVisible = false;
-            LoggedName.Content = null;
-            LoggedRole.Content = null;
-            
         }
 
-        private void ShangePassButton_OnClick(object? sender, RoutedEventArgs e)
-        {            
-            ShangePassNewTB.IsVisible = true;
-            ShangePassOldTB.IsVisible = true;
+        private void ChangePassButton_OnClick(object? sender, RoutedEventArgs e)
+        {      
+            ChangePassButton.IsVisible = false;
+            ChangePassOldTB.IsVisible = true;
+            ChangePassNewTB.IsVisible = true;
+            ApplyChangePassButton.IsVisible = true;
+        }
+
+        private void ApplyChangePassButton_OnClick(object? sender, RoutedEventArgs e)
+        {
+            ChangePassErrorLabel.Content = null;
+            var oldPass = ChangePassOldTB.Text;
+            var newPass = ChangePassNewTB.Text;
+            if (string.IsNullOrEmpty(oldPass) || string.IsNullOrEmpty(newPass))
+                return;
+            if (oldPass == newPass)
+            {
+                ChangePassErrorLabel.Content = "New password may not match the old one!";
+                return;
+            }
+            if (userAccount.Password != oldPass)
+            {
+                ChangePassErrorLabel.Content = "Incorrect password!";
+                return;
+            }
+            userAccount.Password = newPass;
+            usersRepository.Update(userAccount.Name, newPass, userAccount.Role);
+            ChangePassErrorLabel.Content = "Password has been changed!";
+            ChangePassOldTB.Clear();
+            ChangePassNewTB.Clear();
+            UpdateUsersList();
+
+            ChangePassButton.IsVisible = true;
+            ChangePassOldTB.IsVisible = false;
+            ChangePassNewTB.IsVisible = false;
+            ApplyChangePassButton.IsVisible = false;
         }
 
         private void UpdateUsersList()
@@ -145,7 +137,7 @@ namespace AuthTestApp
             StringBuilder pass = new StringBuilder();
             StringBuilder role = new StringBuilder();
 
-            var users = _usersRepository.Get();
+            var users = usersRepository.Get();
             foreach (var user in users)
             {
                 name.Append($"{user.Name}\n");

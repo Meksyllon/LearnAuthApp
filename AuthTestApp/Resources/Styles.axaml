@@ -1,0 +1,115 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Design.PreviewWith>
+    <Border Padding="20">
+		<StackPanel Spacing="10">
+			<TextBlock Text="Sign in:" Classes="header"/>
+			<TextBox Watermark="Username"/>
+			<Button HorizontalAlignment="Stretch" Content="Log in"/>
+			<TextBlock Text="Header2:" Classes="header2"/>
+			<ComboBox SelectedIndex="0" x:Name="RoleComboBox">
+				<ComboBoxItem>Employee</ComboBoxItem>
+				<ComboBoxItem>Admin</ComboBoxItem>
+			</ComboBox>
+		</StackPanel>
+    </Border>
+  </Design.PreviewWith>
+
+	<Style Selector="Window">
+		<Setter Property="Icon" Value="D:\Programming\C#\AuthTestApp\AuthTestApp\Assets\Icon.png"/>
+	</Style>
+	<Style Selector="TextBox">
+		<Setter Property="Background" Value="White"/>
+		<Setter Property="VerticalContentAlignment" Value="Center"/>
+		<Setter Property="Height" Value="40"/>
+		<Setter Property="BorderThickness" Value="2"/>
+		<Setter Property="BorderBrush" Value="rgba(0,0,0,0.3)"/>
+		<Setter Property="CornerRadius" Value="10"/>
+		<Setter Property="Foreground" Value="rgba(0,0,0,0.6)"/>
+		<Setter Property="FontWeight" Value="Medium"/>
+		<Setter Property="FontSize" Value="14"/>
+		<Setter Property="MaxLength" Value="20"/>
+		<Setter Property="Transitions">
+			<Transitions>
+				<BrushTransition Property="Foreground" Duration="0:0:0.5" Easing="QuarticEaseOut"/>
+			</Transitions>
+		</Setter>
+		<Style Selector="^:pointerover">
+			<Style Selector="^ /template/ Border#PART_BorderElement">
+				<Setter Property="Background" Value="Transparent"/>
+				<Setter Property="BorderBrush" Value="{DynamicResource prColor}"/>
+			</Style>
+			<Style Selector="^ /template/ TextBlock#PART_Watermark">
+				<Setter Property="Foreground" Value="rgba(0,0,0,0.6)"/>
+			</Style>
+		</Style>
+		<Style Selector="^:focus">
+			<Setter Property="Foreground" Value="{DynamicResource prColor}"/>
+			<Style Selector="^ /template/ Border#PART_BorderElement">
+				<Setter Property="Background" Value="Transparent"/>
+				<Setter Property="BorderBrush" Value="{DynamicResource prColor}"/>
+			</Style>
+		</Style>
+	</Style>
+	<Style Selector="Button">
+		<Setter Property="Background" Value="{DynamicResource prColor}"/>
+		<Setter Property="VerticalContentAlignment" Value="Center"/>
+		<Setter Property="HorizontalContentAlignment" Value="Center"/>
+		<Setter Property="Height" Value="35"/>
+		<Setter Property="BorderThickness" Value="0"/>
+		<Setter Property="BorderBrush" Value="rgba(0,0,0,0.3)"/>
+		<Setter Property="CornerRadius" Value="12"/>
+		<Setter Property="Foreground" Value="White"/>
+		<Setter Property="FontWeight" Value="Medium"/>
+		<Setter Property="FontSize" Value="14"/>
+		<Setter Property="Transitions">
+			<Transitions>
+				<BrushTransition Property="Foreground" Duration="0:0:0.5" Easing="QuarticEaseOut"/>
+			</Transitions>
+		</Setter>
+	</Style>
+	<Style Selector="TextBlock.header">
+		<Setter Property="Foreground" Value="{DynamicResource prColor}"/>
+		<Setter Property="FontWeight" Value="Bold"/>
+		<Setter Property="FontSize" Value="18"/>
+	</Style>
+	<Style Selector="TextBlock.header2">
+		<Setter Property="Foreground" Value="{DynamicResource prColor}"/>
+		<Setter Property="FontWeight" Value="SemiBold"/>
+		<Setter Property="FontSize" Value="16"/>
+	</Style>
+	<Style Selector="ComboBox">
+		<Setter Property="Background" Value="White"/>
+		<Setter Property="VerticalContentAlignment" Value="Center"/>
+		<Setter Property="Height" Value="40"/>
+		<Setter Property="BorderThickness" Value="2"/>
+		<Setter Property="BorderBrush" Value="{DynamicResource prColor}"/>
+		<Setter Property="CornerRadius" Value="10"/>
+		<Setter Property="Foreground" Value="rgba(0,0,0,0.6)"/>
+		<Setter Property="FontWeight" Value="Medium"/>
+		<Setter Property="FontSize" Value="14"/>
+		<Setter Property="Transitions">
+			<Transitions>
+				<BrushTransition Property="Foreground" Duration="0:0:0.5" Easing="QuarticEaseOut"/>
+			</Transitions>
+		</Setter>
+	</Style>
+	
+	<Style Selector="ComboBoxItem">
+		<Setter Property="VerticalContentAlignment" Value="Center"/>
+		<Setter Property="Height" Value="40"/>
+		<Setter Property="BorderThickness" Value="2"/>
+		<Setter Property="BorderBrush" Value="rgba(0,0,0,0.4)"/>
+		<Setter Property="CornerRadius" Value="10"/>
+		<Setter Property="Foreground" Value="rgba(0,0,0,0.6)"/>
+		<Setter Property="FontWeight" Value="Medium"/>
+		<Setter Property="FontSize" Value="14"/>
+		<Setter Property="Transitions">
+			<Transitions>
+				<BrushTransition Property="Foreground" Duration="0:0:0.5" Easing="QuarticEaseOut"/>
+			</Transitions>
+		</Setter>
+
+
+	</Style>
+</Styles>

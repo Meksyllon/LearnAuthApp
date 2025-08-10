@@ -10,7 +10,7 @@ using Microsoft.Extensions.Options;
 
 namespace AuthTestApp.DataAccess
 {
-    internal class AuthDBContext : DbContext
+    public class AuthDBContext : DbContext
     {
         public DbSet<User> Users { get; set; }
 

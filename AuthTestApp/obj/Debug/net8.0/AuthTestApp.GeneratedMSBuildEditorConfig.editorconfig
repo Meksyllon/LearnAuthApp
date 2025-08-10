@@ -32,5 +32,14 @@ build_property.EnableCodeStyleSeverity =
 [D:/Programming/C\#/AuthTestApp/AuthTestApp/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[D:/Programming/C\#/AuthTestApp/AuthTestApp/EntryWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [D:/Programming/C\#/AuthTestApp/AuthTestApp/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Programming/C\#/AuthTestApp/AuthTestApp/Resources/Colors.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Programming/C\#/AuthTestApp/AuthTestApp/Resources/Styles.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

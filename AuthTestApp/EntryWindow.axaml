@@ -1,0 +1,33 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		CanResize="False"
+		WindowStartupLocation="CenterScreen"
+        x:Class="AuthTestApp.EntryWindow"		
+        Title="Sign in">
+
+		<Grid RowDefinitions="*, *" x:Name="SignUpInPanel">
+			<Panel Grid.Row="0" Background="#f1f1f1"/>
+			<StackPanel Grid.Row="0" Spacing="5" Margin="0 15" Width="200">
+				<TextBlock Text="Sign up:" Classes="header"/>
+				<TextBox Watermark="Username" x:Name="SignUpUsernameTB"/>
+				<TextBox Watermark="Password" x:Name="SignUpPasswordTB" PasswordChar="•"/>
+				<Button x:Name="SignUpButton"
+						Content="Sign up"
+						Click="SignUpButton_OnClick"/>
+				<Label x:Name="SignUpErrorLabel" FontSize="12"/>
+			</StackPanel>
+
+			<Panel Grid.Row="1" Background="#fafafa"/>
+			<StackPanel Grid.Row="1" Spacing="5" Margin="0 15" Width="200">
+				<TextBlock Text="Sign in:" Classes="header"/>
+				<TextBox Watermark="Username" x:Name="SignInUsernameTB"/>
+				<TextBox Watermark="Password" x:Name="SignInPasswordTB" PasswordChar="•"/>
+				<Button x:Name="LogInButton"
+						Content="Log in"
+						Click="LogInButton_OnClick"/>
+				<Label x:Name="SignInErrorLabel" FontSize="12"/>
+			</StackPanel>
+		</Grid>
+</Window>

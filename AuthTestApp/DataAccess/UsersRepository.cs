@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AuthTestApp.DataAccess
 {
-    internal class UsersRepository
+    public class UsersRepository
     {
         private readonly AuthDBContext _dbContext;
 
@@ -50,6 +50,15 @@ namespace AuthTestApp.DataAccess
         {
             return _dbContext.Users
                 .Any(user => user.Name == username);
+        }
+
+        public void Update(string username, string password, string role)
+        {
+            _dbContext.Users
+                .Where(user => user.Name == username)
+                .ExecuteUpdate(s => s
+                .SetProperty(user => user.Password, password)
+                .SetProperty(user => user.Role, role));
         }
     }
 }

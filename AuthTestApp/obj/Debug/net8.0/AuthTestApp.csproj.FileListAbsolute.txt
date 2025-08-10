@@ -197,3 +197,4 @@ D:\Programming\C#\AuthTestApp\AuthTestApp\bin\Debug\net8.0\runtimes\win-arm64\na
 D:\Programming\C#\AuthTestApp\AuthTestApp\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 D:\Programming\C#\AuthTestApp\AuthTestApp\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
 D:\Programming\C#\AuthTestApp\AuthTestApp\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\Programming\C#\AuthTestApp\AuthTestApp\obj\Debug\net8.0\AuthTestApp.sourcelink.json

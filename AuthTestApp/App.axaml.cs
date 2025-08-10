@@ -1,4 +1,8 @@
+using System;
+using System.IO;
+using AuthTestApp.DataAccess;
 using Avalonia;
+using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 
@@ -8,6 +12,8 @@ namespace AuthTestApp
     {
         public override void Initialize()
         {
+            Directory.SetCurrentDirectory(@"..\..\..");
+            System.Console.WriteLine(Directory.GetCurrentDirectory());
             AvaloniaXamlLoader.Load(this);
         }
 
@@ -15,7 +21,11 @@ namespace AuthTestApp
         {
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
-                desktop.MainWindow = new MainWindow();
+                var dbContext = new AuthDBContext();
+                var usersRepository = new UsersRepository(dbContext);
+                desktop.ShutdownMode = ShutdownMode.OnLastWindowClose;
+                var entryWindow = new EntryWindow(usersRepository);
+                entryWindow.Show();
             }
         }
     }
