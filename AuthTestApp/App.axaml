@@ -13,7 +13,7 @@
 	
 	
     <Application.Styles>
+		<FluentTheme />
 		<StyleInclude Source="/Resources/Styles.axaml"/>
-        <FluentTheme />
     </Application.Styles>
 </Application>

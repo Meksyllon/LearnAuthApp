@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuthTestApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1864bfb2aead392b200ff5ed5fc6a2714f43cd01")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0303c3702655e53ba105699b107ecdd7793e49b")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuthTestApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuthTestApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

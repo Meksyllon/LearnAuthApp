@@ -1,23 +1,24 @@
-<Styles xmlns="https://github.com/avaloniaui"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <Design.PreviewWith>
-    <Border Padding="20">
-		<StackPanel Spacing="10">
-			<TextBlock Text="Sign in:" Classes="header"/>
-			<TextBox Watermark="Username"/>
-			<Button HorizontalAlignment="Stretch" Content="Log in"/>
-			<TextBlock Text="Header2:" Classes="header2"/>
-			<ComboBox SelectedIndex="0" x:Name="RoleComboBox">
-				<ComboBoxItem>Employee</ComboBoxItem>
-				<ComboBoxItem>Admin</ComboBoxItem>
-			</ComboBox>
-		</StackPanel>
-    </Border>
-  </Design.PreviewWith>
+<Styles	xmlns="https://github.com/avaloniaui"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Design.PreviewWith>
+		<Border Padding="20">
+			<StackPanel Spacing="10">
+				<TextBlock Text="Sign in:" Classes="header"/>
+				<TextBox Watermark="Username"/>
+				<Button HorizontalAlignment="Stretch" Content="Log in"/>
+				<TextBlock Text="Header2:" Classes="header2"/>
+				<ComboBox SelectedIndex="0" x:Name="RoleComboBox">
+					<ComboBoxItem>Employee</ComboBoxItem>
+					<ComboBoxItem>Admin</ComboBoxItem>
+				</ComboBox>
+			</StackPanel>
+		</Border>
+	</Design.PreviewWith>
 
 	<Style Selector="Window">
 		<Setter Property="Icon" Value="D:\Programming\C#\AuthTestApp\AuthTestApp\Assets\Icon.png"/>
 	</Style>
+	
 	<Style Selector="TextBox">
 		<Setter Property="Background" Value="White"/>
 		<Setter Property="VerticalContentAlignment" Value="Center"/>
@@ -29,18 +30,20 @@
 		<Setter Property="FontWeight" Value="Medium"/>
 		<Setter Property="FontSize" Value="14"/>
 		<Setter Property="MaxLength" Value="20"/>
-		<Setter Property="Transitions">
-			<Transitions>
-				<BrushTransition Property="Foreground" Duration="0:0:0.5" Easing="QuarticEaseOut"/>
-			</Transitions>
-		</Setter>
+
 		<Style Selector="^:pointerover">
 			<Style Selector="^ /template/ Border#PART_BorderElement">
+				<Setter Property="Transitions">
+					<Transitions>
+						<BrushTransition Property="Background" Duration="0:0:0.7" Easing="QuarticEaseOut"/>
+						<BrushTransition Property="BorderBrush" Duration="0:0:0.7" Easing="QuarticEaseOut"/>
+					</Transitions>
+				</Setter>
 				<Setter Property="Background" Value="Transparent"/>
 				<Setter Property="BorderBrush" Value="{DynamicResource prColor}"/>
 			</Style>
 			<Style Selector="^ /template/ TextBlock#PART_Watermark">
-				<Setter Property="Foreground" Value="rgba(0,0,0,0.6)"/>
+				<Setter Property="Foreground" Value="rgba(0,0,0,0.8)"/>
 			</Style>
 		</Style>
 		<Style Selector="^:focus">
@@ -51,6 +54,7 @@
 			</Style>
 		</Style>
 	</Style>
+
 	<Style Selector="Button">
 		<Setter Property="Background" Value="{DynamicResource prColor}"/>
 		<Setter Property="VerticalContentAlignment" Value="Center"/>
@@ -62,12 +66,28 @@
 		<Setter Property="Foreground" Value="White"/>
 		<Setter Property="FontWeight" Value="Medium"/>
 		<Setter Property="FontSize" Value="14"/>
-		<Setter Property="Transitions">
-			<Transitions>
-				<BrushTransition Property="Foreground" Duration="0:0:0.5" Easing="QuarticEaseOut"/>
-			</Transitions>
-		</Setter>
+		<Style Selector="^:pointerover/template/ContentPresenter">
+			<Setter Property="Transitions">
+				<Transitions>
+					<BrushTransition Property="Foreground" Duration="0:0:0.3" Easing="QuarticEaseOut"/>
+					<BrushTransition Property="Background" Duration="0:0:0.3" Easing="QuarticEaseOut"/>
+				</Transitions>
+			</Setter>
+			<Setter Property="Background" Value="#eeeeee"/>
+			<Setter Property="BorderThickness" Value="2"/>
+			<Setter Property="BorderBrush" Value="{DynamicResource prColor}"/>
+		</Style>
+		<Style Selector="^:pressed/template/ContentPresenter">
+			<Setter Property="Background" Value="{DynamicResource prColor}"/>
+			<Setter Property="Foreground" Value="#ffffff"/>
+		</Style>
+		<Style Selector="^:focus/template/ContentPresenter">
+			<Setter Property="BorderThickness" Value="2"/>
+			<Setter Property="BorderBrush" Value="#ee0000"/>
+		</Style>
 	</Style>
+	
+
 	<Style Selector="TextBlock.header">
 		<Setter Property="Foreground" Value="{DynamicResource prColor}"/>
 		<Setter Property="FontWeight" Value="Bold"/>
@@ -88,28 +108,30 @@
 		<Setter Property="Foreground" Value="rgba(0,0,0,0.6)"/>
 		<Setter Property="FontWeight" Value="Medium"/>
 		<Setter Property="FontSize" Value="14"/>
-		<Setter Property="Transitions">
-			<Transitions>
-				<BrushTransition Property="Foreground" Duration="0:0:0.5" Easing="QuarticEaseOut"/>
-			</Transitions>
-		</Setter>
+		<!-- Цвет стрелки
+		<Style Selector="TemplatedControl/template/PathIcon">
+			<Setter Property="Background" Value="{DynamicResource prColor}"/>
+		</Style> -->
 	</Style>
-	
+
+	<Style Selector="ComboBox ToggleButton Path#arrow">
+		<Setter Property="Fill" Value="Red"/>
+		<!-- Цвет стрелки -->
+		<Setter Property="Stretch" Value="Uniform"/>
+	</Style>
+
 	<Style Selector="ComboBoxItem">
+		<Style Selector="^:selected">
+			<Setter Property="Background" Value="{DynamicResource prColor}"/>
+			<Setter Property="BorderBrush" Value="#ee0000"/>
+		</Style>
 		<Setter Property="VerticalContentAlignment" Value="Center"/>
 		<Setter Property="Height" Value="40"/>
-		<Setter Property="BorderThickness" Value="2"/>
 		<Setter Property="BorderBrush" Value="rgba(0,0,0,0.4)"/>
 		<Setter Property="CornerRadius" Value="10"/>
 		<Setter Property="Foreground" Value="rgba(0,0,0,0.6)"/>
 		<Setter Property="FontWeight" Value="Medium"/>
 		<Setter Property="FontSize" Value="14"/>
-		<Setter Property="Transitions">
-			<Transitions>
-				<BrushTransition Property="Foreground" Duration="0:0:0.5" Easing="QuarticEaseOut"/>
-			</Transitions>
-		</Setter>
-
-
 	</Style>
+	
 </Styles>
