@@ -1,0 +1,61 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		mc:Ignorable="d" d:DesignWidth="650" d:DesignHeight="375"
+		CanResize="False"
+		WindowStartupLocation="CenterScreen"
+        x:Class="AuthTestApp.MainWindow"
+        Title="ToDoShka"
+		Background="{DynamicResource bgImage}">
+	<StackPanel Orientation="Horizontal">
+		
+		<StackPanel x:Name="LoggedInfo" Width="200" Margin="15" Spacing="10">
+			<StackPanel Orientation="Horizontal">
+				<TextBlock Text="Username: " Classes="header"/>
+				<Label x:Name="LoggedName" FontSize="16" Margin="0 -2 0 0"/>
+			</StackPanel>
+
+			<StackPanel Orientation="Horizontal" Margin="0 -5 0 -15">
+				<TextBlock Text="Role: " Classes="header"/>
+				<Label x:Name="LoggedRole" FontSize="16" Margin="0 -2 0 0"/>
+			</StackPanel>
+
+			<TextBox Watermark="Old password" x:Name="ChangePassOldTB" PasswordChar="•" IsVisible="False" Margin="0 15 0 0"/>
+			<TextBox Watermark="New password" x:Name="ChangePassNewTB" PasswordChar="•"  IsVisible="False" Margin="0 0 0 -10"/>
+			<Label x:Name="ChangePassErrorLabel" FontSize="12"/>
+			<Button x:Name="ChangePassButton"
+					Content="Change password"
+					Click="ChangePassButton_OnClick"/>
+			<Button x:Name="ApplyChangePassButton"
+					Content="Apply"
+					Click="ApplyChangePassButton_OnClick"
+					IsVisible="False"/>
+			<Button x:Name="OpenAdminPanelButton"
+					Content="Open Admin panel"
+					Click="OpenAdminPanelButton_OnClick"
+					IsVisible="False"/>
+			<Button x:Name="LogOutButton"
+					Content="Log out"
+					Click="LogOutButton_OnClick"/>				
+		</StackPanel>
+		<Panel>
+			<ScrollViewer Margin="15" Width="350">
+				<ItemsControl ItemsSource="**********">
+					<ItemsControl.ItemTemplate>
+						<DataTemplate>
+							<Border Background="White" CornerRadius="15" Margin="0 3">
+								<Grid ColumnDefinitions="Auto,*,Auto">
+									<CheckBox Grid.Column="0" Margin="10"/>
+									<TextBlock Text="ToDo"	Grid.Column="1" Margin="10"/>
+									<Button Classes="DeleteToDoButton"/>
+								</Grid>
+							</Border>
+						</DataTemplate>
+					</ItemsControl.ItemTemplate>
+				</ItemsControl>
+			</ScrollViewer>
+			<TextBox Classes="ToDoTextBox"/>
+		</Panel>
+	</StackPanel>
+</Window>

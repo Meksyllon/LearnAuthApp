@@ -1,4 +1,5 @@
 using AuthTestApp.DataAccess;
+using AuthTestApp.Models;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
@@ -23,64 +24,21 @@ namespace AuthTestApp
             InitializeComponent();
             usersRepository = new UsersRepository(new AuthDBContext());
             userAccount = new User("admin", "admin", UserRoles.Admin);
-            Width = userAccount.Role == UserRoles.Admin ? WindowSizes.FullWidth : WindowSizes.StartWidth;
-            Height = WindowSizes.StartHeight;
-            ShowUserInfo();
+            Width = WindowSizes.MainMenuWidth;
+            Height = WindowSizes.MainMenuHeight;
+            LoggedName.Content = userAccount.Name;
+            LoggedRole.Content = userAccount.Role;
         }
         public MainWindow(UsersRepository usersRepository, User userAccount)
         {
             InitializeComponent();
             this.usersRepository = usersRepository;
             this.userAccount = userAccount;
-            Width = userAccount.Role == UserRoles.Admin ? WindowSizes.FullWidth : WindowSizes.StartWidth;
-            Height = WindowSizes.StartHeight;
-            ShowUserInfo();
-        }
-
-        private void ShowUserInfo()
-        {
+            if(userAccount.Role == UserRoles.Admin) OpenAdminPanelButton.IsVisible = true;
+            Width = WindowSizes.MainMenuWidth;
+            Height = WindowSizes.MainMenuHeight;
             LoggedName.Content = userAccount.Name;
             LoggedRole.Content = userAccount.Role;
-            if (userAccount.Role == UserRoles.Admin)
-            {
-                AdminPanel.IsVisible = true;
-                UpdateUsersList();
-            }
-        }
-
-        private void ButtonAdd_OnClick(object? sender, RoutedEventArgs e)
-        {
-            AddErrorLabel.Content = null;
-            var username = AddNameTB.Text;
-            var password = AddPasswordTB.Text;
-            var role = RoleComboBox.SelectionBoxItem?.ToString();
-            if (role == null) throw new ArgumentException("Role of new user can't be readed");
-            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password)) return;
-            if (usersRepository.UsernameUsed(username))
-            { 
-                AddErrorLabel.Content = "User with this name already exists!";
-                return;
-            }
-            usersRepository.Add(username, password, role);
-            UpdateUsersList();
-            AddNameTB.Clear();
-            AddPasswordTB.Clear();
-        }
-
-        private void ButtonDelete_OnClick(object? sender, RoutedEventArgs e)
-        {
-            DeleteErrorLabel.Content = null;
-            var username = DeleteTextBox.Text;
-            if (string.IsNullOrEmpty(username)) return;
-
-            if (!usersRepository.UsernameUsed(username))
-            {
-                DeleteErrorLabel.Content = "User with this name does not exists!";
-                return;
-            }            
-            usersRepository.Delete(username);
-            UpdateUsersList();
-            DeleteTextBox.Clear();                        
         }
 
         private void LogOutButton_OnClick(object? sender, RoutedEventArgs e)
@@ -123,7 +81,6 @@ namespace AuthTestApp
             ChangePassErrorLabel.Content = "Password has been changed!";
             ChangePassOldTB.Clear();
             ChangePassNewTB.Clear();
-            UpdateUsersList();
 
             ChangePassButton.IsVisible = true;
             ChangePassOldTB.IsVisible = false;
@@ -131,22 +88,15 @@ namespace AuthTestApp
             ApplyChangePassButton.IsVisible = false;
         }
 
-        private void UpdateUsersList()
+        private void OpenAdminPanelButton_OnClick(object? sender, RoutedEventArgs e)
         {
-            StringBuilder name = new StringBuilder();
-            StringBuilder pass = new StringBuilder();
-            StringBuilder role = new StringBuilder();
-
-            var users = usersRepository.Get();
-            foreach (var user in users)
+            if (Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
-                name.Append($"{user.Name}\n");
-                pass.Append($"{user.Password}\n");
-                role.Append($"{user.Role}\n");
+                var adminPanelWindow = desktop.Windows.FirstOrDefault(w => w.Name == "AdminPanelWind");
+                if (adminPanelWindow == null)
+                    adminPanelWindow = new AdminPanelWindow(usersRepository);
+                adminPanelWindow.Show();
             }
-            UsersNameLabel.Content = name.ToString();
-            UsersPasswordLabel.Content = pass.ToString();
-            UsersRoleLabel.Content = role.ToString();
         }
     }
 }

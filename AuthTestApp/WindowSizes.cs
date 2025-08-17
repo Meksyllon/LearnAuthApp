@@ -10,6 +10,9 @@ namespace AuthTestApp
     {
         public const double StartWidth = 230;
         public const double StartHeight = 400;
-        public const double FullWidth = 900;
+        public const double MainMenuWidth = 650;
+        public const double MainMenuHeight = 375;
+        public const double AdminPanelWidth = 650;
+        public const double AdminPanelHeight= 375;
     }
 }

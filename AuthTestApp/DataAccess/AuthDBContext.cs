@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AuthTestApp.Models;
 using Avalonia.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;

@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using System.Linq;
 using AuthTestApp.DataAccess;
+using AuthTestApp.Models;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;

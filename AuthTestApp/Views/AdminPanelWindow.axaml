@@ -1,0 +1,57 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="650" d:DesignHeight="375"
+		CanResize="False"
+		WindowStartupLocation="CenterScreen"
+        x:Class="AuthTestApp.AdminPanelWindow"
+		x:Name="AdminPanelWind"
+        Title="Control panel"
+		Background="{DynamicResource bgImage}">
+	
+	<StackPanel x:Name="AdminPanel" Orientation="Horizontal">
+		<Panel Margin="15 15 80 15" Width="200">
+			<StackPanel VerticalAlignment="Top">
+				<TextBlock Text="Add user:" Classes="header"/>
+				<TextBox Watermark="Username" x:Name="AddNameTB" Margin="0 10"/>
+				<TextBox Watermark="Password" x:Name="AddPasswordTB" Margin="0 0 0 5" PasswordChar="•"/>
+				<TextBlock Text="User role:" Classes="header2"/>
+
+				<Panel>
+					<ComboBox SelectedIndex="0" x:Name="RoleComboBox" Margin="0 0 0 10">
+						<ComboBoxItem>Employee</ComboBoxItem>
+						<ComboBoxItem>Admin</ComboBoxItem>
+					</ComboBox>
+
+					<Button VerticalAlignment="Top" HorizontalAlignment="Right" x:Name="ButtonAdd"
+							Content="Add user"
+							Click="ButtonAdd_OnClick"/>
+				</Panel>
+				<Label x:Name="AddErrorLabel" FontSize="12"/>
+			</StackPanel>
+	
+			<StackPanel VerticalAlignment="Bottom">
+				<TextBlock Text="Delete user:" Classes="header"/>
+				<TextBox  Watermark="Username" x:Name="DeleteTextBox" Margin="0 10"/>
+				<Button x:Name="ButtonDelete"
+					Content="Delete user"
+					Click="ButtonDelete_OnClick"/>
+				<Label x:Name="DeleteErrorLabel" FontSize="12"/>
+			</StackPanel>
+
+		</Panel>
+
+		<StackPanel x:Name="UsersListPanel" Margin="15">
+			<TextBlock Text="Users:" Classes="header"/>
+			<Grid ColumnDefinitions="*, *, *">
+				<TextBlock Text="Username:" Classes="header2" Grid.Column="0" FontWeight="Bold" VerticalAlignment="Top"/>
+				<TextBlock Text="Password:" Classes="header2" Grid.Column="1" Margin="25 0" FontWeight="Bold" VerticalAlignment="Top"/>
+				<TextBlock Text="Role:" Classes="header2" Grid.Column="2" FontWeight="Bold" VerticalAlignment="Top"/>
+				<Label x:Name="UsersNameLabel" Grid.Column="0" Margin="-3 15"/>
+				<Label x:Name="UsersPasswordLabel" Grid.Column="1" Margin="22 15"/>
+				<Label x:Name="UsersRoleLabel" Grid.Column="2" Margin="-3 15"/>
+			</Grid>
+		</StackPanel>
+	</StackPanel>
+</Window>
