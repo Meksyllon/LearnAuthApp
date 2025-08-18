@@ -6,6 +6,9 @@ D:\Programming\C#\AuthTestApp\AuthTestApp\obj\Debug\net8.0\AuthTestApp.AssemblyI
 D:\Programming\C#\AuthTestApp\AuthTestApp\obj\Debug\net8.0\AuthTestApp.AssemblyInfo.cs
 D:\Programming\C#\AuthTestApp\AuthTestApp\obj\Debug\net8.0\AuthTestApp.csproj.CoreCompileInputs.cache
 D:\Programming\C#\AuthTestApp\AuthTestApp\obj\Debug\net8.0\AuthTestApp.sourcelink.json
+D:\Programming\C#\AuthTestApp\AuthTestApp\obj\Debug\net8.0\AuthTestApp.dll
+D:\Programming\C#\AuthTestApp\AuthTestApp\obj\Debug\net8.0\refint\AuthTestApp.dll
+D:\Programming\C#\AuthTestApp\AuthTestApp\obj\Debug\net8.0\AuthTestApp.pdb
 D:\Programming\C#\AuthTestApp\AuthTestApp\bin\Debug\net8.0\AuthTestApp.exe
 D:\Programming\C#\AuthTestApp\AuthTestApp\bin\Debug\net8.0\AuthTestApp.deps.json
 D:\Programming\C#\AuthTestApp\AuthTestApp\bin\Debug\net8.0\AuthTestApp.runtimeconfig.json
@@ -193,8 +196,5 @@ D:\Programming\C#\AuthTestApp\AuthTestApp\bin\Debug\net8.0\runtimes\win-x64\nati
 D:\Programming\C#\AuthTestApp\AuthTestApp\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
 D:\Programming\C#\AuthTestApp\AuthTestApp\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\Programming\C#\AuthTestApp\AuthTestApp\obj\Debug\net8.0\AuthTest.CD7CA0B4.Up2Date
-D:\Programming\C#\AuthTestApp\AuthTestApp\obj\Debug\net8.0\AuthTestApp.dll
-D:\Programming\C#\AuthTestApp\AuthTestApp\obj\Debug\net8.0\refint\AuthTestApp.dll
-D:\Programming\C#\AuthTestApp\AuthTestApp\obj\Debug\net8.0\AuthTestApp.pdb
 D:\Programming\C#\AuthTestApp\AuthTestApp\obj\Debug\net8.0\AuthTestApp.genruntimeconfig.cache
 D:\Programming\C#\AuthTestApp\AuthTestApp\obj\Debug\net8.0\ref\AuthTestApp.dll

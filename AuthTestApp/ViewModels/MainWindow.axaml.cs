@@ -19,26 +19,18 @@ namespace AuthTestApp
     {
         private readonly UsersRepository usersRepository;
         private User userAccount;
-        public MainWindow()
-        {
-            InitializeComponent();
-            usersRepository = new UsersRepository(new AuthDBContext());
-            userAccount = new User("admin", "admin", UserRoles.Admin);
-            Width = WindowSizes.MainMenuWidth;
-            Height = WindowSizes.MainMenuHeight;
-            LoggedName.Content = userAccount.Name;
-            LoggedRole.Content = userAccount.Role;
-        }
+        public MainWindow() : this(new UsersRepository(new AuthDBContext()), new User("admin", "admin", UserRoles.Admin))
+        { }
+
         public MainWindow(UsersRepository usersRepository, User userAccount)
         {
-            InitializeComponent();
             this.usersRepository = usersRepository;
             this.userAccount = userAccount;
-            if(userAccount.Role == UserRoles.Admin) OpenAdminPanelButton.IsVisible = true;
+            InitializeComponent();
             Width = WindowSizes.MainMenuWidth;
             Height = WindowSizes.MainMenuHeight;
-            LoggedName.Content = userAccount.Name;
-            LoggedRole.Content = userAccount.Role;
+            LoggedName.Content = userAccount?.Name;
+            LoggedRole.Content = userAccount?.Role;
         }
 
         private void LogOutButton_OnClick(object? sender, RoutedEventArgs e)
@@ -95,7 +87,7 @@ namespace AuthTestApp
                 var adminPanelWindow = desktop.Windows.FirstOrDefault(w => w.Name == "AdminPanelWind");
                 if (adminPanelWindow == null)
                     adminPanelWindow = new AdminPanelWindow(usersRepository);
-                adminPanelWindow.Show();
+                adminPanelWindow.Show();                
             }
         }
     }

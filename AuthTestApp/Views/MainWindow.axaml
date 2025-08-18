@@ -40,8 +40,8 @@
 					Click="LogOutButton_OnClick"/>				
 		</StackPanel>
 		<Panel>
-			<ScrollViewer Margin="15" Width="350">
-				<ItemsControl ItemsSource="**********">
+			<ScrollViewer Classes="ToDoScrollPanel">
+				<ItemsControl ItemsSource="********">
 					<ItemsControl.ItemTemplate>
 						<DataTemplate>
 							<Border Background="White" CornerRadius="15" Margin="0 3">
@@ -55,7 +55,10 @@
 					</ItemsControl.ItemTemplate>
 				</ItemsControl>
 			</ScrollViewer>
-			<TextBox Classes="ToDoTextBox"/>
+			<DockPanel VerticalAlignment="Bottom">
+				<Button Classes="AddToDoButton"/>
+				<TextBox Classes="ToDoTB"/>
+			</DockPanel>			
 		</Panel>
 	</StackPanel>
 </Window>

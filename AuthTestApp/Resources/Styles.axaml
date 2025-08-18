@@ -2,7 +2,7 @@
 		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 	<Design.PreviewWith>
 		<Border Padding="20">
-			<StackPanel Spacing="10" Width="130">
+			<StackPanel Spacing="10" Width="200">
 				<TextBlock Text="Sign in:" Classes="header"/>
 				<TextBox Watermark="Username"/>
 				<Button HorizontalAlignment="Left" Content="Log in" Width="80"/>
@@ -13,6 +13,10 @@
 				</ComboBox>
 				<CheckBox/>
 				<Button Classes="DeleteToDoButton"/>
+				<DockPanel VerticalAlignment="Bottom">
+					<Button Classes="AddToDoButton" DockPanel.Dock="Right"/>
+					<TextBox Classes="ToDoTB" DockPanel.Dock="Right"/>
+				</DockPanel>
 			</StackPanel>
 		</Border>
 	</Design.PreviewWith>
@@ -55,11 +59,15 @@
 		</Style>
 	</Style>
 
-	<Style Selector="TextBox.ToDoTextBox">
+	<Style Selector="TextBox.ToDoTB">
 		<Setter Property="VerticalAlignment" Value="Bottom"/> 
 		<Setter Property="Watermark" Value="To do..."/> 
-		<Setter Property="Margin" Value="15"/>
-		<Setter Property="Opacity" Value="0"/>
+		<Setter Property="Margin" Value="15 15 0 15"/>
+		<Setter Property="CornerRadius" Value="10 0 0 10"/>		
+		<Setter Property="DockPanel.Dock" Value="Right"/>
+		<Setter Property="Width" Value="310"/>
+		<Setter Property="Height" Value="{Binding , RelativeSource={RelativeSource Self}}"/>
+		<Setter Property="TextWrapping" Value="Wrap"/>
 	</Style>
 
 	<Style Selector="Button">
@@ -115,6 +123,16 @@
 			<Setter Property="Padding" Value="0 -11"/>
 		</Style>
 	</Style>
+
+	<Style Selector="Button.AddToDoButton">
+		<Setter Property="Margin" Value="-1 0 15 0"/>
+		<Setter Property="CornerRadius" Value="0 10 10 0"/>
+		<Setter Property="Content" Value="→"/>
+		<Setter Property="Height" Value="40"/>
+		<Setter Property="Width" Value="40"/>
+		<Setter Property="FontSize" Value="25"/>
+		<Setter Property="DockPanel.Dock" Value="Right"/>
+	</Style>
 	
 	<Style Selector="TextBlock.header">
 		<Setter Property="Foreground" Value="{DynamicResource prColor}"/>
@@ -163,15 +181,21 @@
 		<Setter Property="FontWeight" Value="Medium"/>
 		<Setter Property="FontSize" Value="14"/>
 	</Style>
+	
 	<Style Selector="CheckBox">
 		<Setter Property="CornerRadius" Value="5"/>
 	</Style>
+	
 	<Style Selector=":checked /template/Border#NormalRectangle">
 		<Setter Property="Background" Value="{DynamicResource prColor}"/>
 		<Setter Property="BorderThickness" Value="0"/>
 	</Style>
 	
-	<Style Selector=":vertical /template/ScrollBar#PART_VerticalScrollBar">
-		<Setter Property="Margin" Value="30 0"/>
+	<Style Selector="ScrollViewer.ToDoScrollPanel">
+		<Setter Property="VerticalScrollBarVisibility" Value="Hidden"/> 
+		<Setter Property="Margin" Value="15"/>
+		<Setter Property="Width" Value="350"/>
+		<Setter Property="Height" Value="305"/>
+		<Setter Property="VerticalAlignment" Value="Top"/>
 	</Style>
 </Styles>

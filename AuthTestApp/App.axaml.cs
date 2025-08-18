@@ -19,11 +19,12 @@ namespace AuthTestApp
         {
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
-                var dbContext = new AuthDBContext();
-                var usersRepository = new UsersRepository(dbContext);
-                desktop.ShutdownMode = ShutdownMode.OnLastWindowClose;
-                var entryWindow = new EntryWindow(usersRepository);
-                entryWindow.Show();
+                //var dbContext = new AuthDBContext();
+                //var usersRepository = new UsersRepository(dbContext);
+                //desktop.ShutdownMode = ShutdownMode.OnLastWindowClose;
+                //var entryWindow = new EntryWindow(usersRepository);
+                //entryWindow.Show();
+                desktop.MainWindow = new MainWindow();
             }
         }
     }
