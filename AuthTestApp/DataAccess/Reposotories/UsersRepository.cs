@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using AuthTestApp.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace AuthTestApp.DataAccess
+namespace AuthTestApp.DataAccess.Reposotories
 {
     public class UsersRepository
     {

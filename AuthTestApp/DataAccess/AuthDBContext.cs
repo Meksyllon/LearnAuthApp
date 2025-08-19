@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using AuthTestApp.DataAccess.Configurations;
 using AuthTestApp.Models;
 using Avalonia.Data;
 using Microsoft.EntityFrameworkCore;
@@ -14,7 +14,7 @@ namespace AuthTestApp.DataAccess
     public class AuthDBContext : DbContext
     {
         public DbSet<User> Users { get; set; }
-
+        public DbSet<TaskToDo> Tasks { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var dbPath = @"D:\Programming\C#\AuthTestApp\AuthTestApp\Users.db";

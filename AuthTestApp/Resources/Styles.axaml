@@ -66,7 +66,6 @@
 		<Setter Property="CornerRadius" Value="10 0 0 10"/>		
 		<Setter Property="DockPanel.Dock" Value="Right"/>
 		<Setter Property="Width" Value="310"/>
-		<Setter Property="Height" Value="{Binding , RelativeSource={RelativeSource Self}}"/>
 		<Setter Property="TextWrapping" Value="Wrap"/>
 	</Style>
 

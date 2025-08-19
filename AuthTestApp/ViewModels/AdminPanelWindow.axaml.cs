@@ -5,24 +5,29 @@ using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using Avalonia.Interactivity;
 using System;
+using AuthTestApp.DataAccess.Reposotories;
 
 namespace AuthTestApp;
 
 public partial class AdminPanelWindow : Window
 {
     private readonly UsersRepository usersRepository;
+    private readonly TasksRepository tasksRepository;
     public AdminPanelWindow()
     {
         InitializeComponent();
-        usersRepository = new UsersRepository(new AuthDBContext());
+        var dbContext = new AuthDBContext();
+        usersRepository = new UsersRepository(dbContext);
+        tasksRepository = new TasksRepository(dbContext);
         Width = WindowSizes.AdminPanelWidth;
         Height = WindowSizes.AdminPanelHeight;
         UpdateUsersList();
     }
-    public AdminPanelWindow(UsersRepository usersRepository)
+    public AdminPanelWindow(UsersRepository usersRepository, TasksRepository tasksRepository)
     {
         InitializeComponent();
         this.usersRepository = usersRepository;
+        this.tasksRepository = tasksRepository;
         Width = WindowSizes.AdminPanelWidth;
         Height = WindowSizes.AdminPanelHeight;
         UpdateUsersList();

@@ -2,32 +2,40 @@ using System;
 using System.IO;
 using System.Linq;
 using AuthTestApp.DataAccess;
+using AuthTestApp.DataAccess.Reposotories;
 using AuthTestApp.Models;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
+using Microsoft.EntityFrameworkCore;
 
 namespace AuthTestApp;
 
 public partial class EntryWindow : Window
 {
     private readonly UsersRepository usersRepository;
+    private readonly TasksRepository tasksRepository;
 
     public EntryWindow()
     {
         InitializeComponent();
-        usersRepository = new UsersRepository(new AuthDBContext());
+        var dbContext = new AuthDBContext();
+        usersRepository = new UsersRepository(dbContext);
+        tasksRepository = new TasksRepository(dbContext);
         Width = WindowSizes.StartWidth;
         Height = WindowSizes.StartHeight;
     }
-    public EntryWindow(UsersRepository usersRepository)
+    public EntryWindow(UsersRepository usersRepository, TasksRepository tasksRepository)
     {
         InitializeComponent();
         this.usersRepository = usersRepository;
+        this.tasksRepository = tasksRepository;
         Width = WindowSizes.StartWidth;
         Height = WindowSizes.StartHeight;
+        var a = tasksRepository.Get();
+        var b = usersRepository.Get();
     }
 
     private void SignUpButton_OnClick(object? sender, RoutedEventArgs e)
@@ -71,7 +79,7 @@ public partial class EntryWindow : Window
     {
         if (Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
-            desktop.MainWindow = new MainWindow(usersRepository, user);
+            desktop.MainWindow = new MainWindow(usersRepository, tasksRepository, user);
             desktop.MainWindow.Show();
             this.Close();
         }

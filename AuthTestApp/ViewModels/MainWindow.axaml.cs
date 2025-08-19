@@ -1,4 +1,5 @@
 using AuthTestApp.DataAccess;
+using AuthTestApp.DataAccess.Reposotories;
 using AuthTestApp.Models;
 using Avalonia;
 using Avalonia.Controls;
@@ -18,27 +19,42 @@ namespace AuthTestApp
     public partial class MainWindow : Window
     {
         private readonly UsersRepository usersRepository;
+        private readonly TasksRepository tasksRepository;
         private User userAccount;
-        public MainWindow() : this(new UsersRepository(new AuthDBContext()), new User("admin", "admin", UserRoles.Admin))
-        { }
-
-        public MainWindow(UsersRepository usersRepository, User userAccount)
+        public MainWindow() 
         {
-            this.usersRepository = usersRepository;
-            this.userAccount = userAccount;
             InitializeComponent();
+            var dbContext = new AuthDBContext();
+            usersRepository = new UsersRepository(dbContext);
+            tasksRepository = new TasksRepository(dbContext);
             Width = WindowSizes.MainMenuWidth;
             Height = WindowSizes.MainMenuHeight;
-            LoggedName.Content = userAccount?.Name;
-            LoggedRole.Content = userAccount?.Role;
+            LoggedName.Content = "admin";
+            LoggedRole.Content = "admin";
+            userAccount = usersRepository.GetByUsername("admin");
+            OpenAdminPanelButton.IsVisible = true;
+        }
+
+        public MainWindow(UsersRepository usersRepository, TasksRepository tasksRepository, User userAccount)
+        {
+            InitializeComponent();
+            this.usersRepository = usersRepository;
+            this.tasksRepository = tasksRepository;
+            this.userAccount = userAccount;
+            Width = WindowSizes.MainMenuWidth;
+            Height = WindowSizes.MainMenuHeight;
+            LoggedName.Content = userAccount.Name;
+            LoggedRole.Content = userAccount.Role;
+            OpenAdminPanelButton.IsVisible = this.userAccount.Role == UserRoles.Admin;
         }
 
         private void LogOutButton_OnClick(object? sender, RoutedEventArgs e)
         {
             if (Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
-                var entryWindow = new EntryWindow(usersRepository);
-                entryWindow.Show();
+                var entryWindow = new EntryWindow(usersRepository, tasksRepository);
+                desktop.MainWindow = entryWindow;
+                desktop.MainWindow.Show();
                 this.Close();
             } 
         }
@@ -86,9 +102,15 @@ namespace AuthTestApp
             {
                 var adminPanelWindow = desktop.Windows.FirstOrDefault(w => w.Name == "AdminPanelWind");
                 if (adminPanelWindow == null)
-                    adminPanelWindow = new AdminPanelWindow(usersRepository);
+                    adminPanelWindow = new AdminPanelWindow(usersRepository, tasksRepository);
                 adminPanelWindow.Show();                
             }
+        }
+        private void AddToDoButton_OnClick(object? sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(ToDoTB.Text)) return;
+            tasksRepository.Add(ToDoTB.Text, userAccount.Id);
+            ToDoTB.Text = string.Empty;
         }
     }
 }

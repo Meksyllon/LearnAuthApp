@@ -56,8 +56,11 @@
 				</ItemsControl>
 			</ScrollViewer>
 			<DockPanel VerticalAlignment="Bottom">
-				<Button Classes="AddToDoButton"/>
-				<TextBox Classes="ToDoTB"/>
+				<Button Classes="AddToDoButton"
+						x:Name="AddToDoButton"
+					Click="AddToDoButton_OnClick"/>
+				<TextBox Classes="ToDoTB"
+						x:Name="ToDoTB"/>
 			</DockPanel>			
 		</Panel>
 	</StackPanel>
