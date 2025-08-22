@@ -17,7 +17,7 @@ namespace AuthTestApp.DataAccess.Reposotories
             _dbContext = dbContext;
         }
 
-        public List<TaskToDo> Get()
+        public List<ToDoItem> Get()
         {
             return _dbContext.Tasks
                 .AsNoTracking()
@@ -25,7 +25,7 @@ namespace AuthTestApp.DataAccess.Reposotories
                 .ToList();
         }
 
-        public List<TaskToDo> GetByUser(Guid userId)
+        public List<ToDoItem> GetByUser(Guid userId)
         {
             var user = _dbContext.Users.FirstOrDefault(user => user.Id == userId) 
                 ?? throw new Exception("User was not found");
@@ -35,7 +35,7 @@ namespace AuthTestApp.DataAccess.Reposotories
                 .ToList();
         }
 
-        public List<TaskToDo> GetByUsername(string username)
+        public List<ToDoItem> GetByUsername(string username)
         {
             var user = _dbContext.Users.FirstOrDefault(user => user.Name == username)
                 ?? throw new Exception("User was not found");
@@ -47,7 +47,7 @@ namespace AuthTestApp.DataAccess.Reposotories
 
         public void Add(string description, Guid userId)
         {
-            var task = new TaskToDo(description, userId);
+            var task = new ToDoItem(description, userId);
             _dbContext.Add(task);
             _dbContext.SaveChanges();
         }

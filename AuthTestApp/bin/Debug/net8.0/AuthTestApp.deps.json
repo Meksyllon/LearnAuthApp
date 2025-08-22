@@ -12,7 +12,11 @@
           "Avalonia.Desktop": "11.3.4",
           "Avalonia.Diagnostics": "11.3.4",
           "Avalonia.Fonts.Inter": "11.3.4",
+          "Avalonia.Markup.Xaml.Loader": "11.3.4",
+          "Avalonia.ReactiveUI": "11.3.4",
           "Avalonia.Themes.Fluent": "11.3.4",
+          "HotAvalonia": "2.1.0",
+          "HotAvalonia.Extensions": "2.1.0",
           "Microsoft.Data.Sqlite": "9.0.8",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.8",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.8"
@@ -157,6 +161,17 @@
           }
         }
       },
+      "Avalonia.Markup.Xaml.Loader/11.3.4": {
+        "dependencies": {
+          "Avalonia": "11.3.4"
+        },
+        "runtime": {
+          "lib/net8.0/Avalonia.Markup.Xaml.Loader.dll": {
+            "assemblyVersion": "11.3.4.0",
+            "fileVersion": "11.3.4.0"
+          }
+        }
+      },
       "Avalonia.Native/11.3.4": {
         "dependencies": {
           "Avalonia": "11.3.4"
@@ -172,6 +187,19 @@
             "rid": "osx",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Avalonia.ReactiveUI/11.3.4": {
+        "dependencies": {
+          "Avalonia": "11.3.4",
+          "ReactiveUI": "20.1.1",
+          "System.Reactive": "6.0.1"
+        },
+        "runtime": {
+          "lib/net8.0/Avalonia.ReactiveUI.dll": {
+            "assemblyVersion": "11.3.4.0",
+            "fileVersion": "11.3.4.0"
           }
         }
       },
@@ -248,6 +276,17 @@
           "lib/net8.0/Avalonia.X11.dll": {
             "assemblyVersion": "11.3.4.0",
             "fileVersion": "11.3.4.0"
+          }
+        }
+      },
+      "DynamicData/8.4.1": {
+        "dependencies": {
+          "System.Reactive": "6.0.1"
+        },
+        "runtime": {
+          "lib/net8.0/DynamicData.dll": {
+            "assemblyVersion": "8.4.0.0",
+            "fileVersion": "8.4.1.20756"
           }
         }
       },
@@ -351,6 +390,19 @@
           }
         }
       },
+      "HotAvalonia/2.1.0": {
+        "dependencies": {
+          "MonoMod.Backports": "1.1.2",
+          "MonoMod.RuntimeDetour": "25.2.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/HotAvalonia.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
+        }
+      },
+      "HotAvalonia.Extensions/2.1.0": {},
       "Humanizer.Core/2.14.1": {
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
@@ -889,6 +941,26 @@
           }
         }
       },
+      "Mono.Cecil/0.11.5": {
+        "runtime": {
+          "lib/netstandard2.0/Mono.Cecil.Mdb.dll": {
+            "assemblyVersion": "0.11.5.0",
+            "fileVersion": "0.11.5.0"
+          },
+          "lib/netstandard2.0/Mono.Cecil.Pdb.dll": {
+            "assemblyVersion": "0.11.5.0",
+            "fileVersion": "0.11.5.0"
+          },
+          "lib/netstandard2.0/Mono.Cecil.Rocks.dll": {
+            "assemblyVersion": "0.11.5.0",
+            "fileVersion": "0.11.5.0"
+          },
+          "lib/netstandard2.0/Mono.Cecil.dll": {
+            "assemblyVersion": "0.11.5.0",
+            "fileVersion": "0.11.5.0"
+          }
+        }
+      },
       "Mono.TextTemplating/3.0.0": {
         "dependencies": {
           "System.CodeDom": "6.0.0"
@@ -897,6 +969,84 @@
           "lib/net6.0/Mono.TextTemplating.dll": {
             "assemblyVersion": "3.0.0.0",
             "fileVersion": "3.0.0.1"
+          }
+        }
+      },
+      "MonoMod.Backports/1.1.2": {
+        "dependencies": {
+          "MonoMod.ILHelpers": "1.1.0"
+        },
+        "runtime": {
+          "lib/net8.0/MonoMod.Backports.dll": {
+            "assemblyVersion": "1.1.2.0",
+            "fileVersion": "1.1.2.0"
+          }
+        }
+      },
+      "MonoMod.Core/1.2.1": {
+        "dependencies": {
+          "Mono.Cecil": "0.11.5",
+          "MonoMod.Backports": "1.1.2",
+          "MonoMod.ILHelpers": "1.1.0",
+          "MonoMod.Utils": "25.0.7"
+        },
+        "runtime": {
+          "lib/net8.0/MonoMod.Core.dll": {
+            "assemblyVersion": "1.2.1.0",
+            "fileVersion": "1.2.1.0"
+          },
+          "lib/net8.0/MonoMod.Iced.dll": {
+            "assemblyVersion": "1.21.0.0",
+            "fileVersion": "1.21.0.0"
+          }
+        }
+      },
+      "MonoMod.ILHelpers/1.1.0": {
+        "runtime": {
+          "lib/net8.0/MonoMod.ILHelpers.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "MonoMod.RuntimeDetour/25.2.1": {
+        "dependencies": {
+          "Mono.Cecil": "0.11.5",
+          "MonoMod.Backports": "1.1.2",
+          "MonoMod.Core": "1.2.1",
+          "MonoMod.ILHelpers": "1.1.0",
+          "MonoMod.Utils": "25.0.7"
+        },
+        "runtime": {
+          "lib/net8.0/MonoMod.RuntimeDetour.dll": {
+            "assemblyVersion": "25.2.1.0",
+            "fileVersion": "25.2.1.0"
+          }
+        }
+      },
+      "MonoMod.Utils/25.0.7": {
+        "dependencies": {
+          "Mono.Cecil": "0.11.5",
+          "MonoMod.Backports": "1.1.2",
+          "MonoMod.ILHelpers": "1.1.0"
+        },
+        "runtime": {
+          "lib/net8.0/MonoMod.Utils.dll": {
+            "assemblyVersion": "25.0.7.0",
+            "fileVersion": "25.0.7.0"
+          }
+        }
+      },
+      "ReactiveUI/20.1.1": {
+        "dependencies": {
+          "DynamicData": "8.4.1",
+          "Splat": "15.1.1",
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/ReactiveUI.dll": {
+            "assemblyVersion": "20.1.0.0",
+            "fileVersion": "20.1.1.46356"
           }
         }
       },
@@ -965,6 +1115,14 @@
             "rid": "win-x86",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Splat/15.1.1": {
+        "runtime": {
+          "lib/net8.0/Splat.dll": {
+            "assemblyVersion": "15.1.0.0",
+            "fileVersion": "15.1.1.17670"
           }
         }
       },
@@ -1120,6 +1278,7 @@
         }
       },
       "System.Collections.Immutable/7.0.0": {},
+      "System.ComponentModel.Annotations/5.0.0": {},
       "System.Composition/7.0.0": {
         "dependencies": {
           "System.Composition.AttributedModel": "7.0.0",
@@ -1197,6 +1356,14 @@
         }
       },
       "System.Memory/4.5.3": {},
+      "System.Reactive/6.0.1": {
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.1.7420"
+          }
+        }
+      },
       "System.Reflection.Metadata/7.0.0": {
         "dependencies": {
           "System.Collections.Immutable": "7.0.0"
@@ -1307,12 +1474,26 @@
       "path": "avalonia.freedesktop/11.3.4",
       "hashPath": "avalonia.freedesktop.11.3.4.nupkg.sha512"
     },
+    "Avalonia.Markup.Xaml.Loader/11.3.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-y9W84uUfl5x6sSgffYoQgS/37at0+1onfY8LTMgqpfAezmQdF0+cPT2y9tI9+VgU3p4yRSXZ7HYatW/IGGjEfg==",
+      "path": "avalonia.markup.xaml.loader/11.3.4",
+      "hashPath": "avalonia.markup.xaml.loader.11.3.4.nupkg.sha512"
+    },
     "Avalonia.Native/11.3.4": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-/z1jskU1K0JF+yUI+NVfKgf+T42vs7wU4B2nC7SX7766j6DZWCin7Po8pb2EVrKdHseR+SUK0pYbztg9U3ge+w==",
       "path": "avalonia.native/11.3.4",
       "hashPath": "avalonia.native.11.3.4.nupkg.sha512"
+    },
+    "Avalonia.ReactiveUI/11.3.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zudXyXSrDVhnrvr2hQRoWCapD6QBe3+6UKXOfoQjtw4Vdsd+smqdUVvEgclPCrq0N+QDHBR8gySVgZ4MXYrk4A==",
+      "path": "avalonia.reactiveui/11.3.4",
+      "hashPath": "avalonia.reactiveui.11.3.4.nupkg.sha512"
     },
     "Avalonia.Remote.Protocol/11.3.4": {
       "type": "package",
@@ -1356,6 +1537,13 @@
       "path": "avalonia.x11/11.3.4",
       "hashPath": "avalonia.x11.11.3.4.nupkg.sha512"
     },
+    "DynamicData/8.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Mn1+fU/jqxgONEJq8KLQPGWEi7g/hUVTbjZyn4QM0sWWDAVOHPO9WjXWORSykwdfg/6S3GM15qsfz+2EvO+QAQ==",
+      "path": "dynamicdata/8.4.1",
+      "hashPath": "dynamicdata.8.4.1.nupkg.sha512"
+    },
     "HarfBuzzSharp/8.3.1.1": {
       "type": "package",
       "serviceable": true,
@@ -1390,6 +1578,20 @@
       "sha512": "sha512-UsJtQsfAJoFDZrXc4hCUfRPMqccfKZ0iumJ/upcUjz/cmsTgVFGNEL5yaJWmkqsuFYdMWbj/En5/kS4PFl9hBA==",
       "path": "harfbuzzsharp.nativeassets.win32/8.3.1.1",
       "hashPath": "harfbuzzsharp.nativeassets.win32.8.3.1.1.nupkg.sha512"
+    },
+    "HotAvalonia/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8RJhHjMo+AUSeiMxhXkKfFHAqBqJYz6rgcRay5An0Nn8UtN7ywECUW3Ba66nalfYxRFbs8LOMBG/KTKhdgPnpA==",
+      "path": "hotavalonia/2.1.0",
+      "hashPath": "hotavalonia.2.1.0.nupkg.sha512"
+    },
+    "HotAvalonia.Extensions/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oUlhkV033N35vXtinWOi8dQk6g/bHG74Y/49jhtDvwycwElwKpf+Un9p+oMOo8BFFnN+WCmlMdufoHnZWV2HJQ==",
+      "path": "hotavalonia.extensions/2.1.0",
+      "hashPath": "hotavalonia.extensions.2.1.0.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1608,12 +1810,61 @@
       "path": "microsoft.extensions.primitives/9.0.8",
       "hashPath": "microsoft.extensions.primitives.9.0.8.nupkg.sha512"
     },
+    "Mono.Cecil/0.11.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fxfX+0JGTZ8YQeu1MYjbBiK2CYTSzDyEeIixt+yqKKTn7FW8rv7JMY70qevup4ZJfD7Kk/VG/jDzQQTpfch87g==",
+      "path": "mono.cecil/0.11.5",
+      "hashPath": "mono.cecil.0.11.5.nupkg.sha512"
+    },
     "Mono.TextTemplating/3.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-YqueG52R/Xej4VVbKuRIodjiAhV0HR/XVbLbNrJhCZnzjnSjgMJ/dCdV0akQQxavX6hp/LC6rqLGLcXeQYU7XA==",
       "path": "mono.texttemplating/3.0.0",
       "hashPath": "mono.texttemplating.3.0.0.nupkg.sha512"
+    },
+    "MonoMod.Backports/1.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-baYlNy8n8kmaNhNvqmZ/dIPOeO1r9//dG1i2WbunMWtWZ2EKtIgmXaS+ZzphzTsikkGnoD4Jwr5g0TVdpDjgpw==",
+      "path": "monomod.backports/1.1.2",
+      "hashPath": "monomod.backports.1.1.2.nupkg.sha512"
+    },
+    "MonoMod.Core/1.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OlazOFTGuN8qysPDRqlpd/T4wPaIo4Jx2BAn/HCe60vlizfjgWHECXlEnwJmYRIGL681BFPoIbUKwpRmbIMTug==",
+      "path": "monomod.core/1.2.1",
+      "hashPath": "monomod.core.1.2.1.nupkg.sha512"
+    },
+    "MonoMod.ILHelpers/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L2FWjhTrv7tcIxshfZ+M3OcaNr4cNw0IwiVZEgwqRnZ5QAN3+RrNJ8ZwCzwXUWyPDqooJxMcjjg8PsSYUiNBjQ==",
+      "path": "monomod.ilhelpers/1.1.0",
+      "hashPath": "monomod.ilhelpers.1.1.0.nupkg.sha512"
+    },
+    "MonoMod.RuntimeDetour/25.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7jxqVet6LFMxLLzyK93RgGxuNH6yXsn8r42BvtBwVCGmjwEi+p+I9J/iPFsjW6eI9J/dnEBRxXVTU2muLblGlA==",
+      "path": "monomod.runtimedetour/25.2.1",
+      "hashPath": "monomod.runtimedetour.25.2.1.nupkg.sha512"
+    },
+    "MonoMod.Utils/25.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GfDGdu7e6qWtprLO9fDT1ePBRZfKu4XYlSl/ZsDI7/Z7nkIL/BXKtzArAT71vALwUcSLFINBatrljujzryVfrA==",
+      "path": "monomod.utils/25.0.7",
+      "hashPath": "monomod.utils.25.0.7.nupkg.sha512"
+    },
+    "ReactiveUI/20.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9hNPknWjijnaSWs6auypoXqUptPZcRpUypF+cf1zD50fgW+SEoQda502N3fVZ2eWPcaiUad+z6GaLwOWmUVHNw==",
+      "path": "reactiveui/20.1.1",
+      "hashPath": "reactiveui.20.1.1.nupkg.sha512"
     },
     "SkiaSharp/2.88.9": {
       "type": "package",
@@ -1649,6 +1900,13 @@
       "sha512": "sha512-wb2kYgU7iy84nQLYZwMeJXixvK++GoIuECjU4ECaUKNuflyRlJKyiRhN1MAHswvlvzuvkrjRWlK0Za6+kYQK7w==",
       "path": "skiasharp.nativeassets.win32/2.88.9",
       "hashPath": "skiasharp.nativeassets.win32.2.88.9.nupkg.sha512"
+    },
+    "Splat/15.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RHDTdF90FwVbRia2cmuIzkiVoETqnXSB2dDBBi/I35HWXqv4OKGqoMcfcd6obMvO2OmmY5PjU1M62K8LkJafAA==",
+      "path": "splat/15.1.1",
+      "hashPath": "splat.15.1.1.nupkg.sha512"
     },
     "SQLitePCLRaw.bundle_e_sqlite3/2.1.10": {
       "type": "package",
@@ -1691,6 +1949,13 @@
       "sha512": "sha512-dQPcs0U1IKnBdRDBkrCTi1FoajSTBzLcVTpjO4MBCMC7f4pDOIPzgBoX8JjG7X6uZRJ8EBxsi8+DR1JuwjnzOQ==",
       "path": "system.collections.immutable/7.0.0",
       "hashPath": "system.collections.immutable.7.0.0.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dMkqfy2el8A8/I76n2Hi1oBFEbG1SfxD2l5nhwXV3XjlnOmwxJlQbYpJH4W51odnU9sARCSAgv7S3CyAFMkpYg==",
+      "path": "system.componentmodel.annotations/5.0.0",
+      "hashPath": "system.componentmodel.annotations.5.0.0.nupkg.sha512"
     },
     "System.Composition/7.0.0": {
       "type": "package",
@@ -1754,6 +2019,13 @@
       "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
       "path": "system.memory/4.5.3",
       "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "System.Reactive/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rHaWtKDwCi9qJ3ObKo8LHPMuuwv33YbmQi7TcUK1C264V3MFnOr5Im7QgCTdLniztP3GJyeiSg5x8NqYJFqRmg==",
+      "path": "system.reactive/6.0.1",
+      "hashPath": "system.reactive.6.0.1.nupkg.sha512"
     },
     "System.Reflection.Metadata/7.0.0": {
       "type": "package",

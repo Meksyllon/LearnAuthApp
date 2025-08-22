@@ -14,7 +14,7 @@ namespace AuthTestApp.DataAccess
     public class AuthDBContext : DbContext
     {
         public DbSet<User> Users { get; set; }
-        public DbSet<TaskToDo> Tasks { get; set; }
+        public DbSet<ToDoItem> Tasks { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var dbPath = @"D:\Programming\C#\AuthTestApp\AuthTestApp\Users.db";

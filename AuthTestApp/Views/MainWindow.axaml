@@ -8,47 +8,54 @@
         x:Class="AuthTestApp.MainWindow"
         Title="ToDoShka"
 		Background="{DynamicResource bgImage}">
-	<StackPanel Orientation="Horizontal">
-		
-		<StackPanel x:Name="LoggedInfo" Width="200" Margin="15" Spacing="10">
-			<StackPanel Orientation="Horizontal">
-				<TextBlock Text="Username: " Classes="header"/>
-				<Label x:Name="LoggedName" FontSize="16" Margin="0 -2 0 0"/>
+	
+  <StackPanel Orientation="Horizontal">
+		<Border Classes="DefaultWhiteBorder" Margin="15" CornerRadius="30" VerticalAlignment="Top">
+			<StackPanel x:Name="LoggedInfo" Width="200" Margin="15" Spacing="10">
+				<StackPanel Orientation="Horizontal">
+					<TextBlock Text="Username: " Classes="header"/>
+					<Label x:Name="LoggedName" FontSize="16" Margin="0 -2 0 0"/>
+				</StackPanel>
+	
+				<StackPanel Orientation="Horizontal" Margin="0 -5 0 -15">
+					<TextBlock Text="Role: " Classes="header"/>
+					<Label x:Name="LoggedRole" FontSize="16" Margin="0 -2 0 0"/>
+				</StackPanel>
+	
+				<TextBox Watermark="Old password" x:Name="ChangePassOldTB" PasswordChar="•" IsVisible="False" Margin="0 15 0 0"/>
+				<TextBox Watermark="New password" x:Name="ChangePassNewTB" PasswordChar="•"  IsVisible="False" Margin="0 0 0 -10"/>
+				<Label x:Name="ChangePassErrorLabel" FontSize="12"/>
+				<Button x:Name="ChangePassButton"
+						Classes="HoverAnimation"
+						Content="Change password"
+						Click="ChangePassButton_OnClick"/>
+				<Button x:Name="ApplyChangePassButton"
+						Classes="HoverAnimation"
+						Content="Apply"
+						IsVisible="False"
+						Click="ApplyChangePassButton_OnClick"/>
+				<Button x:Name="OpenAdminPanelButton"
+						Classes="HoverAnimation"
+						Content="Open Admin panel"
+						IsVisible="False"
+						Click="OpenAdminPanelButton_OnClick"/>
+				<Button x:Name="LogOutButton"
+						Classes="HoverAnimation"
+						Content="Log out"
+						Click="LogOutButton_OnClick"/>
 			</StackPanel>
-
-			<StackPanel Orientation="Horizontal" Margin="0 -5 0 -15">
-				<TextBlock Text="Role: " Classes="header"/>
-				<Label x:Name="LoggedRole" FontSize="16" Margin="0 -2 0 0"/>
-			</StackPanel>
-
-			<TextBox Watermark="Old password" x:Name="ChangePassOldTB" PasswordChar="•" IsVisible="False" Margin="0 15 0 0"/>
-			<TextBox Watermark="New password" x:Name="ChangePassNewTB" PasswordChar="•"  IsVisible="False" Margin="0 0 0 -10"/>
-			<Label x:Name="ChangePassErrorLabel" FontSize="12"/>
-			<Button x:Name="ChangePassButton"
-					Content="Change password"
-					Click="ChangePassButton_OnClick"/>
-			<Button x:Name="ApplyChangePassButton"
-					Content="Apply"
-					Click="ApplyChangePassButton_OnClick"
-					IsVisible="False"/>
-			<Button x:Name="OpenAdminPanelButton"
-					Content="Open Admin panel"
-					Click="OpenAdminPanelButton_OnClick"
-					IsVisible="False"/>
-			<Button x:Name="LogOutButton"
-					Content="Log out"
-					Click="LogOutButton_OnClick"/>				
-		</StackPanel>
+		</Border>
 		<Panel>
 			<ScrollViewer Classes="ToDoScrollPanel">
-				<ItemsControl ItemsSource="********">
+				<ItemsControl ItemsSource="***">
 					<ItemsControl.ItemTemplate>
 						<DataTemplate>
-							<Border Background="White" CornerRadius="15" Margin="0 3">
-								<Grid ColumnDefinitions="Auto,*,Auto">
-									<CheckBox Grid.Column="0" Margin="10"/>
-									<TextBlock Text="ToDo"	Grid.Column="1" Margin="10"/>
-									<Button Classes="DeleteToDoButton"/>
+							<Border Classes="DefaultWhiteBorder">
+								<Grid ColumnDefinitions="*,Auto, Auto">
+									<!--<TextBlock Text="ToDo"	Grid.Column="0" Margin="10"/>-->
+									<TextBox Grid.Column="0" Classes="ToDoDescTB"/>
+									<Button Grid.Column="1" Classes="EditToDoButton"/>
+									<Button Grid.Column="2" Classes="DeleteToDoButton"/>
 								</Grid>
 							</Border>
 						</DataTemplate>
@@ -57,11 +64,11 @@
 			</ScrollViewer>
 			<DockPanel VerticalAlignment="Bottom">
 				<Button Classes="AddToDoButton"
-						x:Name="AddToDoButton"
-					Click="AddToDoButton_OnClick"/>
+						x:Name="AddToDoButton"/>
 				<TextBox Classes="ToDoTB"
 						x:Name="ToDoTB"/>
 			</DockPanel>			
 		</Panel>
 	</StackPanel>
+
 </Window>

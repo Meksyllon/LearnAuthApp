@@ -9,9 +9,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace AuthTestApp.DataAccess.Configurations
 {
-    internal class TasksConfiguration : IEntityTypeConfiguration<TaskToDo>
+    internal class TasksConfiguration : IEntityTypeConfiguration<ToDoItem>
     {
-        public void Configure(EntityTypeBuilder<TaskToDo> builder)
+        public void Configure(EntityTypeBuilder<ToDoItem> builder)
         {
             builder.HasKey(x => x.Id);
 

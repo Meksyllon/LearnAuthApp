@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Xml.Linq;
@@ -74,14 +75,14 @@ namespace AuthTestApp
             var newPass = ChangePassNewTB.Text;
             if (string.IsNullOrEmpty(oldPass) || string.IsNullOrEmpty(newPass))
                 return;
-            if (oldPass == newPass)
-            {
-                ChangePassErrorLabel.Content = "New password may not match the old one!";
-                return;
-            }
             if (userAccount.Password != oldPass)
             {
                 ChangePassErrorLabel.Content = "Incorrect password!";
+                return;
+            }
+            if (oldPass == newPass)
+            {
+                ChangePassErrorLabel.Content = "New password may not match the\nold one!";
                 return;
             }
             userAccount.Password = newPass;
@@ -103,7 +104,7 @@ namespace AuthTestApp
                 var adminPanelWindow = desktop.Windows.FirstOrDefault(w => w.Name == "AdminPanelWind");
                 if (adminPanelWindow == null)
                     adminPanelWindow = new AdminPanelWindow(usersRepository, tasksRepository);
-                adminPanelWindow.Show();                
+                adminPanelWindow.Show();
             }
         }
         private void AddToDoButton_OnClick(object? sender, RoutedEventArgs e)

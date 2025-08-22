@@ -3,20 +3,76 @@
   "WorkspaceRootPath": "D:\\Programming\\C#\\AuthTestApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\viewmodels\\adminpanelwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\viewmodels\\adminpanelwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\viewmodels\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\viewmodels\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\views\\entrywindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\views\\entrywindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\views\\entrywindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\views\\entrywindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\dataaccess\\reposotories\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\dataaccess\\reposotories\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\dataaccess\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\dataaccess\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\resources\\styles.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}|Code",
+      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\resources\\styles.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}|Code"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\resources\\styles.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\resources\\styles.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\views\\adminpanelwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\views\\adminpanelwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\viewmodels\\entrywindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\viewmodels\\entrywindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\views\\adminpanelwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\views\\adminpanelwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\authtestapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\authtestapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\dataaccess\\reposotories\\tasksrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\dataaccess\\reposotories\\tasksrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\userroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,24 +83,8 @@
       "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\windowsizes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\dataaccess\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\dataaccess\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\dataaccess\\reposotories\\tasksrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\dataaccess\\reposotories\\tasksrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\dataaccess\\reposotories\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\dataaccess\\reposotories\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\dataaccess\\configurations\\tasksconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,36 +95,12 @@
       "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\dataaccess\\configurations\\usersconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\views\\entrywindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\views\\entrywindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\resources\\colors.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\resources\\colors.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\resources\\styles.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\resources\\styles.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\models\\tasktodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\models\\tasktodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\migrations\\20250819170834_taskentitymigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -101,10 +117,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\migrations\\20250803144545_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\migrations\\20250803144545_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|d:\\programming\\c#\\authtestapp\\authtestapp\\authtestapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{45848D46-3493-4DC8-A260-2D6A14A47D41}|AuthTestApp\\AuthTestApp.csproj|solutionrelative:authtestapp\\authtestapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -114,7 +126,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -122,72 +134,95 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MainWindow.axaml.cs",
-              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\ViewModels\\MainWindow.axaml.cs",
-              "RelativeDocumentMoniker": "AuthTestApp\\ViewModels\\MainWindow.axaml.cs",
-              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\ViewModels\\MainWindow.axaml.cs",
-              "RelativeToolTip": "AuthTestApp\\ViewModels\\MainWindow.axaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAMwGEAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Views\\MainWindow.axaml.cs",
+              "RelativeDocumentMoniker": "AuthTestApp\\Views\\MainWindow.axaml.cs",
+              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Views\\MainWindow.axaml.cs",
+              "RelativeToolTip": "AuthTestApp\\Views\\MainWindow.axaml.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAkwGwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-03T14:57:28.564Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\ViewModels\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "AuthTestApp\\ViewModels\\ViewModelBase.cs",
+              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\ViewModels\\ViewModelBase.cs",
+              "RelativeToolTip": "AuthTestApp\\ViewModels\\ViewModelBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T08:38:18.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "App.axaml.cs",
+              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\App.axaml.cs",
+              "RelativeDocumentMoniker": "AuthTestApp\\App.axaml.cs",
+              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\App.axaml.cs",
+              "RelativeToolTip": "AuthTestApp\\App.axaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T14:57:30.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.axaml",
+              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\App.axaml",
+              "RelativeDocumentMoniker": "AuthTestApp\\App.axaml",
+              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\App.axaml",
+              "RelativeToolTip": "AuthTestApp\\App.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-03T17:20:58.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Views\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "AuthTestApp\\Views\\MainWindow.axaml",
+              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Views\\MainWindow.axaml",
+              "RelativeToolTip": "AuthTestApp\\Views\\MainWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-03T15:04:56.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EntryWindow.axaml",
+              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Views\\EntryWindow.axaml",
+              "RelativeDocumentMoniker": "AuthTestApp\\Views\\EntryWindow.axaml",
+              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Views\\EntryWindow.axaml",
+              "RelativeToolTip": "AuthTestApp\\Views\\EntryWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-09T06:50:07.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "EntryWindow.axaml.cs",
-              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\ViewModels\\EntryWindow.axaml.cs",
-              "RelativeDocumentMoniker": "AuthTestApp\\ViewModels\\EntryWindow.axaml.cs",
-              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\ViewModels\\EntryWindow.axaml.cs",
-              "RelativeToolTip": "AuthTestApp\\ViewModels\\EntryWindow.axaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAMwCYAAAAEAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Views\\EntryWindow.axaml.cs",
+              "RelativeDocumentMoniker": "AuthTestApp\\Views\\EntryWindow.axaml.cs",
+              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Views\\EntryWindow.axaml.cs",
+              "RelativeToolTip": "AuthTestApp\\Views\\EntryWindow.axaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAMwCEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-09T06:50:07.795Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TasksRepository.cs",
-              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\DataAccess\\Reposotories\\TasksRepository.cs",
-              "RelativeDocumentMoniker": "AuthTestApp\\DataAccess\\Reposotories\\TasksRepository.cs",
-              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\DataAccess\\Reposotories\\TasksRepository.cs",
-              "RelativeToolTip": "AuthTestApp\\DataAccess\\Reposotories\\TasksRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T16:01:56.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AuthDBContext.cs",
-              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\DataAccess\\AuthDBContext.cs",
-              "RelativeDocumentMoniker": "AuthTestApp\\DataAccess\\AuthDBContext.cs",
-              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\DataAccess\\AuthDBContext.cs",
-              "RelativeToolTip": "AuthTestApp\\DataAccess\\AuthDBContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T14:57:31.421Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "app.manifest",
-              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\app.manifest",
-              "RelativeDocumentMoniker": "AuthTestApp\\app.manifest",
-              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\app.manifest",
-              "RelativeToolTip": "AuthTestApp\\app.manifest",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
-              "WhenOpened": "2025-08-03T15:05:12.912Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Program.cs",
               "RelativeDocumentMoniker": "AuthTestApp\\Program.cs",
@@ -200,20 +235,135 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserRoles.cs",
-              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\UserRoles.cs",
-              "RelativeDocumentMoniker": "AuthTestApp\\UserRoles.cs",
-              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\UserRoles.cs",
-              "RelativeToolTip": "AuthTestApp\\UserRoles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "AuthTestApp\\ViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "AuthTestApp\\ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T07:02:16.373Z",
+              "WhenOpened": "2025-08-22T09:06:24.208Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
+              "Title": "ToDoItem.cs",
+              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Models\\ToDoItem.cs",
+              "RelativeDocumentMoniker": "AuthTestApp\\Models\\ToDoItem.cs",
+              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Models\\ToDoItem.cs",
+              "RelativeToolTip": "AuthTestApp\\Models\\ToDoItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T15:49:43.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsersRepository.cs",
+              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\DataAccess\\Reposotories\\UsersRepository.cs",
+              "RelativeDocumentMoniker": "AuthTestApp\\DataAccess\\Reposotories\\UsersRepository.cs",
+              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\DataAccess\\Reposotories\\UsersRepository.cs",
+              "RelativeToolTip": "AuthTestApp\\DataAccess\\Reposotories\\UsersRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T15:11:41.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthDBContext.cs",
+              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\DataAccess\\AuthDBContext.cs",
+              "RelativeDocumentMoniker": "AuthTestApp\\DataAccess\\AuthDBContext.cs",
+              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\DataAccess\\AuthDBContext.cs",
+              "RelativeToolTip": "AuthTestApp\\DataAccess\\AuthDBContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T14:57:31.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Styles.axaml",
+              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Resources\\Styles.axaml",
+              "RelativeDocumentMoniker": "AuthTestApp\\Resources\\Styles.axaml",
+              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Resources\\Styles.axaml",
+              "RelativeToolTip": "AuthTestApp\\Resources\\Styles.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-09T16:27:45.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AdminPanelWindow.axaml",
+              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Views\\AdminPanelWindow.axaml",
+              "RelativeDocumentMoniker": "AuthTestApp\\Views\\AdminPanelWindow.axaml",
+              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Views\\AdminPanelWindow.axaml",
+              "RelativeToolTip": "AuthTestApp\\Views\\AdminPanelWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-17T07:10:14.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AdminPanelWindow.axaml.cs",
+              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Views\\AdminPanelWindow.axaml.cs",
+              "RelativeDocumentMoniker": "AuthTestApp\\Views\\AdminPanelWindow.axaml.cs",
+              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Views\\AdminPanelWindow.axaml.cs",
+              "RelativeToolTip": "AuthTestApp\\Views\\AdminPanelWindow.axaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAASwAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T07:10:14.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AuthTestApp.csproj",
+              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\AuthTestApp.csproj",
+              "RelativeDocumentMoniker": "AuthTestApp\\AuthTestApp.csproj",
+              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\AuthTestApp.csproj",
+              "RelativeToolTip": "AuthTestApp\\AuthTestApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-09T16:25:47.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TasksRepository.cs",
+              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\DataAccess\\Reposotories\\TasksRepository.cs",
+              "RelativeDocumentMoniker": "AuthTestApp\\DataAccess\\Reposotories\\TasksRepository.cs",
+              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\DataAccess\\Reposotories\\TasksRepository.cs",
+              "RelativeToolTip": "AuthTestApp\\DataAccess\\Reposotories\\TasksRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T16:01:56.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "app.manifest",
+              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\app.manifest",
+              "RelativeDocumentMoniker": "AuthTestApp\\app.manifest",
+              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\app.manifest",
+              "RelativeToolTip": "AuthTestApp\\app.manifest",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
+              "WhenOpened": "2025-08-03T15:05:12.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "WindowSizes.cs",
               "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\WindowSizes.cs",
               "RelativeDocumentMoniker": "AuthTestApp\\WindowSizes.cs",
@@ -226,45 +376,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminPanelWindow.axaml.cs",
-              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\ViewModels\\AdminPanelWindow.axaml.cs",
-              "RelativeDocumentMoniker": "AuthTestApp\\ViewModels\\AdminPanelWindow.axaml.cs",
-              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\ViewModels\\AdminPanelWindow.axaml.cs",
-              "RelativeToolTip": "AuthTestApp\\ViewModels\\AdminPanelWindow.axaml.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAMwE8AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "UserRoles.cs",
+              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\UserRoles.cs",
+              "RelativeDocumentMoniker": "AuthTestApp\\UserRoles.cs",
+              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\UserRoles.cs",
+              "RelativeToolTip": "AuthTestApp\\UserRoles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T07:10:14.686Z",
+              "WhenOpened": "2025-08-09T07:02:16.373Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdminPanelWindow.axaml",
-              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Views\\AdminPanelWindow.axaml",
-              "RelativeDocumentMoniker": "AuthTestApp\\Views\\AdminPanelWindow.axaml",
-              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Views\\AdminPanelWindow.axaml",
-              "RelativeToolTip": "AuthTestApp\\Views\\AdminPanelWindow.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-17T07:10:14.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UsersRepository.cs",
-              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\DataAccess\\Reposotories\\UsersRepository.cs",
-              "RelativeDocumentMoniker": "AuthTestApp\\DataAccess\\Reposotories\\UsersRepository.cs",
-              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\DataAccess\\Reposotories\\UsersRepository.cs",
-              "RelativeToolTip": "AuthTestApp\\DataAccess\\Reposotories\\UsersRepository.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAIwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T15:11:41.577Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 21,
               "Title": "TasksConfiguration.cs",
               "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\DataAccess\\Configurations\\TasksConfiguration.cs",
               "RelativeDocumentMoniker": "AuthTestApp\\DataAccess\\Configurations\\TasksConfiguration.cs",
@@ -277,7 +402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 22,
               "Title": "UsersConfiguration.cs",
               "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\DataAccess\\Configurations\\UsersConfiguration.cs",
               "RelativeDocumentMoniker": "AuthTestApp\\DataAccess\\Configurations\\UsersConfiguration.cs",
@@ -290,31 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "EntryWindow.axaml",
-              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Views\\EntryWindow.axaml",
-              "RelativeDocumentMoniker": "AuthTestApp\\Views\\EntryWindow.axaml",
-              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Views\\EntryWindow.axaml",
-              "RelativeToolTip": "AuthTestApp\\Views\\EntryWindow.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-09T06:50:07.949Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MainWindow.axaml",
-              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Views\\MainWindow.axaml",
-              "RelativeDocumentMoniker": "AuthTestApp\\Views\\MainWindow.axaml",
-              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Views\\MainWindow.axaml",
-              "RelativeToolTip": "AuthTestApp\\Views\\MainWindow.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-03T15:04:56.816Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "Colors.axaml",
               "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Resources\\Colors.axaml",
               "RelativeDocumentMoniker": "AuthTestApp\\Resources\\Colors.axaml",
@@ -326,44 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Styles.axaml",
-              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Resources\\Styles.axaml",
-              "RelativeDocumentMoniker": "AuthTestApp\\Resources\\Styles.axaml",
-              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Resources\\Styles.axaml",
-              "RelativeToolTip": "AuthTestApp\\Resources\\Styles.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-09T16:27:45.877Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "App.axaml",
-              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\App.axaml",
-              "RelativeDocumentMoniker": "AuthTestApp\\App.axaml",
-              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\App.axaml",
-              "RelativeToolTip": "AuthTestApp\\App.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-03T17:20:58.585Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "App.axaml.cs",
-              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\App.axaml.cs",
-              "RelativeDocumentMoniker": "AuthTestApp\\App.axaml.cs",
-              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\App.axaml.cs",
-              "RelativeToolTip": "AuthTestApp\\App.axaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T14:57:30.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Models\\User.cs",
               "RelativeDocumentMoniker": "AuthTestApp\\Models\\User.cs",
@@ -376,20 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "TaskToDo.cs",
-              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Models\\TaskToDo.cs",
-              "RelativeDocumentMoniker": "AuthTestApp\\Models\\TaskToDo.cs",
-              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Models\\TaskToDo.cs",
-              "RelativeToolTip": "AuthTestApp\\Models\\TaskToDo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T15:49:43.062Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "AuthDBContextModelSnapshot.cs",
               "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Migrations\\AuthDBContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "AuthTestApp\\Migrations\\AuthDBContextModelSnapshot.cs",
@@ -402,7 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "20250819170834_TaskEntityMigration.cs",
               "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Migrations\\20250819170834_TaskEntityMigration.cs",
               "RelativeDocumentMoniker": "AuthTestApp\\Migrations\\20250819170834_TaskEntityMigration.cs",
@@ -415,41 +466,61 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "20250804173942_AddPasswordField.cs",
               "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Migrations\\20250804173942_AddPasswordField.cs",
               "RelativeDocumentMoniker": "AuthTestApp\\Migrations\\20250804173942_AddPasswordField.cs",
               "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Migrations\\20250804173942_AddPasswordField.cs",
               "RelativeToolTip": "AuthTestApp\\Migrations\\20250804173942_AddPasswordField.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-04T17:39:42.313Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "20250803144545_InitialCreate.cs",
               "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Migrations\\20250803144545_InitialCreate.cs",
               "RelativeDocumentMoniker": "AuthTestApp\\Migrations\\20250803144545_InitialCreate.cs",
               "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Migrations\\20250803144545_InitialCreate.cs",
               "RelativeToolTip": "AuthTestApp\\Migrations\\20250803144545_InitialCreate.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwB8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-03T14:45:45.363Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "41d6e25a-33c2-4dae-a2a6-32428bbbbf36",
+        "Display": 1,
+        "X": 414,
+        "Y": 397,
+        "Width": 1653,
+        "Height": 758,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "AuthTestApp.csproj",
-              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\AuthTestApp.csproj",
-              "RelativeDocumentMoniker": "AuthTestApp\\AuthTestApp.csproj",
-              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\AuthTestApp.csproj",
-              "RelativeToolTip": "AuthTestApp\\AuthTestApp.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-09T16:25:47.536Z",
+              "DocumentIndex": 12,
+              "Title": "Styles.axaml",
+              "DocumentMoniker": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Resources\\Styles.axaml",
+              "RelativeDocumentMoniker": "AuthTestApp\\Resources\\Styles.axaml",
+              "ToolTip": "D:\\Programming\\C#\\AuthTestApp\\AuthTestApp\\Resources\\Styles.axaml",
+              "RelativeToolTip": "AuthTestApp\\Resources\\Styles.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-22T07:17:10.827Z",
               "EditorCaption": ""
             }
           ]

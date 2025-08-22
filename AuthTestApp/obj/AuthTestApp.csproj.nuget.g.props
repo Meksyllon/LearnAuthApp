@@ -13,11 +13,42 @@
     <SourceRoot Include="C:\Users\maxma\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <ItemGroup Condition=" '$(Language)' == 'C#' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Compile Include="$(NuGetPackageRoot)hotavalonia.extensions\2.1.0\contentFiles\cs\any\AvaloniaHotReloadExtensions.cs" Condition="Exists('$(NuGetPackageRoot)hotavalonia.extensions\2.1.0\contentFiles\cs\any\AvaloniaHotReloadExtensions.cs')">
+      <NuGetPackageId>HotAvalonia.Extensions</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>AvaloniaHotReloadExtensions.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(Language)' == 'F#' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Compile Include="$(NuGetPackageRoot)hotavalonia.extensions\2.1.0\contentFiles\fs\any\AvaloniaHotReloadExtensions.fs" Condition="Exists('$(NuGetPackageRoot)hotavalonia.extensions\2.1.0\contentFiles\fs\any\AvaloniaHotReloadExtensions.fs')">
+      <NuGetPackageId>HotAvalonia.Extensions</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>AvaloniaHotReloadExtensions.fs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(Language)' == 'VB' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Compile Include="$(NuGetPackageRoot)hotavalonia.extensions\2.1.0\contentFiles\vb\any\AvaloniaHotReloadExtensions.vb" Condition="Exists('$(NuGetPackageRoot)hotavalonia.extensions\2.1.0\contentFiles\vb\any\AvaloniaHotReloadExtensions.vb')">
+      <NuGetPackageId>HotAvalonia.Extensions</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>AvaloniaHotReloadExtensions.vb</Link>
+    </Compile>
+  </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)skiasharp.nativeassets.webassembly\2.88.9\buildTransitive\netstandard1.0\SkiaSharp.NativeAssets.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)skiasharp.nativeassets.webassembly\2.88.9\buildTransitive\netstandard1.0\SkiaSharp.NativeAssets.WebAssembly.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\9.0.8\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\9.0.8\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\9.0.8\build\net8.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\9.0.8\build\net8.0\Microsoft.EntityFrameworkCore.Design.props')" />
+    <Import Project="$(NuGetPackageRoot)hotavalonia.extensions\2.1.0\build\HotAvalonia.Extensions.props" Condition="Exists('$(NuGetPackageRoot)hotavalonia.extensions\2.1.0\build\HotAvalonia.Extensions.props')" />
     <Import Project="$(NuGetPackageRoot)harfbuzzsharp.nativeassets.webassembly\8.3.1.1\buildTransitive\netstandard1.0\HarfBuzzSharp.NativeAssets.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)harfbuzzsharp.nativeassets.webassembly\8.3.1.1\buildTransitive\netstandard1.0\HarfBuzzSharp.NativeAssets.WebAssembly.props')" />
     <Import Project="$(NuGetPackageRoot)avalonia\11.3.4\buildTransitive\Avalonia.props" Condition="Exists('$(NuGetPackageRoot)avalonia\11.3.4\buildTransitive\Avalonia.props')" />
   </ImportGroup>

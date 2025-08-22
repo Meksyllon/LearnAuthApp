@@ -10,10 +10,12 @@ C:\Users\maxma\.nuget\packages\avalonia.fonts.inter\11.3.4\lib\net8.0\Avalonia.F
 C:\Users\maxma\.nuget\packages\avalonia.freedesktop\11.3.4\lib\net8.0\Avalonia.FreeDesktop.dll
 C:\Users\maxma\.nuget\packages\avalonia\11.3.4\ref\net8.0\Avalonia.Markup.dll
 C:\Users\maxma\.nuget\packages\avalonia\11.3.4\ref\net8.0\Avalonia.Markup.Xaml.dll
+C:\Users\maxma\.nuget\packages\avalonia.markup.xaml.loader\11.3.4\lib\net8.0\Avalonia.Markup.Xaml.Loader.dll
 C:\Users\maxma\.nuget\packages\avalonia\11.3.4\ref\net8.0\Avalonia.Metal.dll
 C:\Users\maxma\.nuget\packages\avalonia\11.3.4\ref\net8.0\Avalonia.MicroCom.dll
 C:\Users\maxma\.nuget\packages\avalonia.native\11.3.4\lib\net8.0\Avalonia.Native.dll
 C:\Users\maxma\.nuget\packages\avalonia\11.3.4\ref\net8.0\Avalonia.OpenGL.dll
+C:\Users\maxma\.nuget\packages\avalonia.reactiveui\11.3.4\lib\net8.0\Avalonia.ReactiveUI.dll
 C:\Users\maxma\.nuget\packages\avalonia.remote.protocol\11.3.4\lib\net8.0\Avalonia.Remote.Protocol.dll
 C:\Users\maxma\.nuget\packages\avalonia.skia\11.3.4\lib\net8.0\Avalonia.Skia.dll
 C:\Users\maxma\.nuget\packages\avalonia.themes.fluent\11.3.4\lib\net8.0\Avalonia.Themes.Fluent.dll
@@ -22,7 +24,9 @@ C:\Users\maxma\.nuget\packages\avalonia\11.3.4\ref\net8.0\Avalonia.Vulkan.dll
 C:\Users\maxma\.nuget\packages\avalonia.win32\11.3.4\lib\net8.0\Avalonia.Win32.Automation.dll
 C:\Users\maxma\.nuget\packages\avalonia.win32\11.3.4\lib\net8.0\Avalonia.Win32.dll
 C:\Users\maxma\.nuget\packages\avalonia.x11\11.3.4\lib\net8.0\Avalonia.X11.dll
+C:\Users\maxma\.nuget\packages\dynamicdata\8.4.1\lib\net8.0\DynamicData.dll
 C:\Users\maxma\.nuget\packages\harfbuzzsharp\8.3.1.1\lib\net8.0\HarfBuzzSharp.dll
+C:\Users\maxma\.nuget\packages\hotavalonia\2.1.0\lib\netstandard2.1\HotAvalonia.dll
 C:\Users\maxma\.nuget\packages\microcom.runtime\0.11.0\lib\net5.0\MicroCom.Runtime.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.11\ref\net8.0\Microsoft.CSharp.dll
 C:\Users\maxma\.nuget\packages\microsoft.data.sqlite.core\9.0.8\lib\net8.0\Microsoft.Data.Sqlite.dll
@@ -44,9 +48,21 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.11\ref\net8.0\Micros
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.11\ref\net8.0\Microsoft.VisualBasic.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.11\ref\net8.0\Microsoft.Win32.Primitives.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.11\ref\net8.0\Microsoft.Win32.Registry.dll
+C:\Users\maxma\.nuget\packages\mono.cecil\0.11.5\lib\netstandard2.0\Mono.Cecil.dll
+C:\Users\maxma\.nuget\packages\mono.cecil\0.11.5\lib\netstandard2.0\Mono.Cecil.Mdb.dll
+C:\Users\maxma\.nuget\packages\mono.cecil\0.11.5\lib\netstandard2.0\Mono.Cecil.Pdb.dll
+C:\Users\maxma\.nuget\packages\mono.cecil\0.11.5\lib\netstandard2.0\Mono.Cecil.Rocks.dll
+C:\Users\maxma\.nuget\packages\monomod.backports\1.1.2\lib\net8.0\MonoMod.Backports.dll
+C:\Users\maxma\.nuget\packages\monomod.core\1.2.1\lib\net8.0\MonoMod.Core.dll
+C:\Users\maxma\.nuget\packages\monomod.core\1.2.1\lib\net8.0\MonoMod.Iced.dll
+C:\Users\maxma\.nuget\packages\monomod.ilhelpers\1.1.0\lib\net8.0\MonoMod.ILHelpers.dll
+C:\Users\maxma\.nuget\packages\monomod.runtimedetour\25.2.1\lib\net8.0\MonoMod.RuntimeDetour.dll
+C:\Users\maxma\.nuget\packages\monomod.utils\25.0.7\lib\net8.0\MonoMod.Utils.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.11\ref\net8.0\mscorlib.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.11\ref\net8.0\netstandard.dll
+C:\Users\maxma\.nuget\packages\reactiveui\20.1.1\lib\net8.0\ReactiveUI.dll
 C:\Users\maxma\.nuget\packages\skiasharp\2.88.9\lib\net6.0\SkiaSharp.dll
+C:\Users\maxma\.nuget\packages\splat\15.1.1\lib\net8.0\Splat.dll
 C:\Users\maxma\.nuget\packages\sqlitepclraw.bundle_e_sqlite3\2.1.10\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\maxma\.nuget\packages\sqlitepclraw.core\2.1.10\lib\netstandard2.0\SQLitePCLRaw.core.dll
 C:\Users\maxma\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.1.10\lib\net6.0\SQLitePCLRaw.provider.e_sqlite3.dll
@@ -131,6 +147,7 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.11\ref\net8.0\System
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.11\ref\net8.0\System.Numerics.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.11\ref\net8.0\System.Numerics.Vectors.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.11\ref\net8.0\System.ObjectModel.dll
+C:\Users\maxma\.nuget\packages\system.reactive\6.0.1\lib\net6.0\System.Reactive.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.11\ref\net8.0\System.Reflection.DispatchProxy.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.11\ref\net8.0\System.Reflection.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.11\ref\net8.0\System.Reflection.Emit.dll
